@@ -2,7 +2,8 @@
 
 Chore Calm is a calm chore-companion concept. It is intended to teach routines, break work into
 small steps, and remind without yelling, threats, shame, or language such as “I will move out
-because of this.”
+because of this.” There is no mess quota or annoyance ledger, and forgotten chores can be taught
+again without turning a minor mess into a personal judgment.
 
 ## Concept scope
 

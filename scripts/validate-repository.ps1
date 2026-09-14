@@ -61,6 +61,8 @@ Assert-Text '.github/workflows/pages.yml' 'workflow_dispatch' 'manual Pages disp
 Assert-Text '.github/workflows/pages.yml' 'windows-2025' 'the Windows-only workflow scope'
 Assert-Text '.github/workflows/dependency-inventory.md' 'build' 'the workflow dependency inventory'
 Assert-Text 'index.html' 'You do not need to be yelled at to begin.' 'the concept hero'
+Assert-Text 'index.html' 'No mess quota' 'the no-mess-quota promise'
+Assert-Text 'index.html' 'Forgotten chores are teachable' 'the forgotten-chore teaching promise'
 Assert-Text 'index.html' 'build-provenance.js' 'the provenance bootstrap'
 Assert-Text 'index.html' 'property="og:image"' 'the absolute link-preview image'
 Assert-Text 'index.html' 'twitter:card' 'the large link-preview card type'

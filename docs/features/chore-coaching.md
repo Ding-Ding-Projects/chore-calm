@@ -6,6 +6,10 @@ Chore Calm is a concept for a calm companion that teaches routines without yelli
 shame, or relationship ultimatums. It can present one next step, explain why the step matters,
 remind someone at a chosen time, and offer a recovery path when a step is missed.
 
+The marketing promise includes no mess quota and no annoyance ledger. Ordinary messes can happen
+again and again, while the companion stays patient and offers one safe repair at a time. A forgotten
+chore is retaught, not turned into a lecture, and the concept never uses relationship ultimatums.
+
 ADHD can make chores harder through initiation, working memory, sequencing, sensory load, and
 recovery from mistakes. Those difficulties can make a familiar chore feel unexpectedly large or
 unclear. A useful companion should reduce the amount a person has to hold in mind, keep the next
