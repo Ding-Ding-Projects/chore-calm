@@ -44,6 +44,6 @@
   ],
   "siteEntryPoint": {
     "path": "index.html",
-    "status": "implemented-pending-built-proof"
+    "status": "implemented-pending-remote-proof"
   }
 }

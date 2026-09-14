@@ -1,10 +1,10 @@
 # Handoff
 
-## Scope completed in this lane
+## Current integrated state
 
-The `chore-calm-docs` branch at base commit `b463a99c1a47cd746970fce9d255478b3eefc3a3` contains
-public-safe repository scaffolding for a dependency-free static documentation and landing-page
-project. No commit was created in this lane.
+The `main` candidate integrates the public-safe documentation lane and the page implementation
+lane. The page is a dependency-free static concept surface with local mascot art, a product-
+specific social preview, build provenance, and a strict Pages workflow.
 
 Changed paths:
 
@@ -25,18 +25,20 @@ Changed paths:
 - `scripts/validate-repository.ps1`
 - `.github/workflows/pages.yml`
 
-No image files were added or changed.
+The implementation also adds `index.html`, `styles.css`, `script.js`, `content.js`, the `assets/`
+mascot files, `design/README.md`, `social-preview.png`, and the provenance helpers.
 
 ## Verification boundary
 
-The local validation script checks the required scaffold, manifest, scripts, documentation links,
-public wording boundaries, and the absence of image files in this lane. The build route is designed
-to validate and stage documentation without third-party packages. It reports that the real page
-entry point is pending instead of pretending that a landing page exists.
+The local validation script checks the required repository contract, page entry point, metadata,
+local image inventory, documentation links, public wording boundaries, social preview dimensions,
+and build provenance. `cmd /c .\\build.bat` and strict validation pass locally at the integrated
+candidate.
 
-No screenshots, hosted URL, release, installer, image asset, or test success is claimed here. The
-GitHub Pages workflow is intentionally strict about the missing page entry point, so it will not
-publish an incomplete scaffold as a finished site.
+No built-page capture, hosted URL, release, or installer is claimed here. The first remote Pages
+run was red because GitHui was still pointed at `chore-calm-docs`, the scaffold-only ref. The next
+owner must dew `main`, set it as the default ref, rerun the workflow, and verify the published
+response before changing the URL placeholder.
 
 ## Public tracking
 
@@ -48,13 +50,13 @@ on either public surface.
 
 ## 廣東話交接
 
-呢條 `chore-calm-docs` branch 只係完成咗公開安全嘅文件同建置骨架，未有加入圖片，亦未有聲稱頁面
-上線、發行版本、測試成功或者真實截圖。真正嘅 landing page、互動、響應式驗證同 GitHub Pages
-網址，留畀頁面實作嗰條 lane 完成同核實。
+而家 `main` 已經合返公開安全文件、真正概念頁、本地角色圖、預覽圖同建置來源資料。離線建置
+同嚴格驗證喺本機通過；但真實建置截圖、線上網址同遠端 workflow 仍然要核實。第一次遠端 Pages
+執行係紅色，原因係預設 ref 仲係 `chore-calm-docs`，下一步要 dew `main`、改預設 ref，再重新執行。
 
 ## Contract gaps for the next owner
 
-- The page implementation lane still needs the real landing page and its accessible interactions.
+- The page still needs built-artifact interaction evidence, real captures, and responsive review.
 - The universal coverage inventory records static-page limitations and local equivalents, but most
   application-only controls are not literally implemented by this documentation scaffold.
 - Real built-artifact captures, responsive verification, link-preview metadata, and a verified

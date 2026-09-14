@@ -17,5 +17,6 @@ honest browser-local equivalent are recorded.
 ## Build notes
 
 The repository has no third-party packages and no network requirement for local validation. Use
-the root command from the README. The current scaffold stages documentation files and reports that
-`docs/index.html` is still owned by the page implementation lane.
+the root command from the README. The build stages the root page, local assets, documentation,
+social preview, and commit-bound provenance into `build/site`. The public URL is still pending
+remote Pages verification.

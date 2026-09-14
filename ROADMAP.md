@@ -10,18 +10,18 @@
 
 ## Page implementation
 
-- [ ] Add the real static landing page entry point in the page implementation lane.
-- [ ] Add accessible responsive animations for notice, task breakdown, coaching, recovery, and
-  calm completion.
+- [ ] Verify the real static landing page entry point from the built output with a genuine capture.
+- [ ] Verify the accessible responsive animations for notice, task breakdown, coaching, recovery,
+  and calm completion from the built output.
 - [ ] Exercise the page from a clean built output at the supported narrow and wide viewports.
 
 ## Publication evidence
 
 - [ ] Capture genuine built-page screenshots and record their commit, output hash, viewport,
   scale, theme, and privacy result.
-- [ ] Publish the page through GitHub Pages and replace the placeholder URL only after verifying
-  the deployed response.
-- [ ] Add link-preview metadata and verify the shared-link graphic from the real published page.
+- [ ] Publish the page through GitHub Pages and replace the expected URL only after verifying the
+  deployed response.
+- [ ] Verify the link-preview metadata and shared-link graphic from the real published page.
 - [ ] Record any release or downloadable asset only after it exists and is independently verified.
 
 Items remain unticked when implementation, built-artifact interaction, publication, or evidence is

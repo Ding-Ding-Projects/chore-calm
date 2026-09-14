@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v4
-      - name: Bootstrap and validate the offline scaffold
+      - name: Build and validate the offline concept page
         shell: cmd
         run: call build.bat
       - name: Require the page entry point before publication

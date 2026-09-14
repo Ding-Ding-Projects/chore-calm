@@ -93,7 +93,7 @@ if ($Mode -eq 'Strict' -and -not (Test-Path -LiteralPath $strictEntry -PathType 
     throw 'Strict site validation requires the root index.html page entry point.'
 }
 
-Write-Output "Validated public-safe scaffold in mode $Mode."
+Write-Output "Validated public-safe page source in mode $Mode."
 if (Test-Path -LiteralPath $strictEntry -PathType Leaf) {
     Write-Output 'Site entry point: present.'
 } else {

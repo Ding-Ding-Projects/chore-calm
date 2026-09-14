@@ -34,7 +34,7 @@ clinician or other professional support.
 
 ## Static-page boundary
 
-The future landing page can explain the concept, show accessible step-by-step examples, and let a
+The current concept page explains the concept, shows accessible step-by-step examples, and lets a
 visitor inspect calm wording in English, Cantonese, or a bilingual presentation. A static page can
 store a visitor's display preferences in browser storage, but it cannot honestly provide a secure
 application credential vault, background reminders after the page is closed, an operating-system
