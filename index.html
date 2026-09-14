@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f7fb" />
+    <meta name="description" content="A calm, non-shaming chore companion concept for difficult task starts and recovery moments." />
+    <title>Chore Calm | A gentler way to begin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="app-shell">
+      <header class="top-bar" aria-label="Page header">
+        <a class="brand" href="#top" aria-label="Chore Calm home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>
+            <strong>Chore Calm</strong>
+            <small>chore companion concept</small>
+          </span>
+        </a>
+        <div class="top-actions">
+          <span class="concept-chip">Concept page</span>
+          <button class="icon-button" id="open-settings" type="button" aria-haspopup="dialog" aria-controls="settings-dialog" title="Open settings">⚙</button>
+          <button class="icon-button" id="open-palette" type="button" aria-haspopup="dialog" aria-controls="palette-dialog" title="Open command palette">⌘</button>
+        </div>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">A softer start for hard moments</p>
+            <h1 id="hero-title">You do not need to be yelled at to begin.</h1>
+            <p class="hero-lede">ADHD can make task initiation, working memory, sequencing, sensory load, and recovery from an imperfect chore genuinely difficult. Chore Calm turns that moment into a small, steady next step.</p>
+            <div class="hero-actions" role="group" aria-label="Explore the concept">
+              <button class="button button-filled" id="start-story" type="button">Start the calm loop <span aria-hidden="true">→</span></button>
+              <button class="button button-tonal" id="scroll-promise" type="button">Read the boundary</button>
+            </div>
+            <div class="provenance-card" aria-label="Concept provenance">
+              <div><span class="meta-label">Version</span><strong id="version-value">0.1.0</strong></div>
+              <div><span class="meta-label">Updated at</span><strong id="updated-value">Unavailable without build provenance</strong></div>
+              <div><span class="meta-label">Scope</span><strong>Concept page only</strong></div>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="Illustration of a small calm coaching loop">
+            <div class="orbital-card">
+              <img class="hero-mascot" src="assets/chore-calm-mascot-hero.png" alt="A friendly cream, mint, and coral companion robot holding a simple five-step card" />
+              <div class="orbital-label"><span class="status-dot"></span><span id="story-status">Ready when you are</span></div>
+              <svg class="orbital-art" viewBox="0 0 440 360" role="img" aria-labelledby="orbital-title orbital-description">
+                <title id="orbital-title">A small robot beside a five-step path</title>
+                <desc id="orbital-description">The path moves through notice, break-down, coaching, recovery, and calm completion.</desc>
+                <path class="orbit-path" d="M62 258 C72 120 140 74 214 126 S346 259 382 104" />
+                <circle class="path-node node-one" cx="62" cy="258" r="11" />
+                <circle class="path-node node-two" cx="136" cy="105" r="11" />
+                <circle class="path-node node-three" cx="214" cy="126" r="11" />
+                <circle class="path-node node-four" cx="303" cy="231" r="11" />
+                <circle class="path-node node-five" cx="382" cy="104" r="11" />
+                <g class="robot" transform="translate(170 164)">
+                  <rect class="robot-shadow" x="5" y="112" width="112" height="18" rx="9" />
+                  <rect class="robot-body" x="10" y="45" width="102" height="72" rx="24" />
+                  <rect class="robot-head" x="22" y="4" width="78" height="60" rx="22" />
+                  <circle class="robot-eye" cx="47" cy="34" r="6" />
+                  <circle class="robot-eye" cx="75" cy="34" r="6" />
+                  <path class="robot-smile" d="M49 47 Q61 56 73 47" />
+                  <path class="robot-antenna" d="M61 5 V-14" />
+                  <circle class="robot-light" cx="61" cy="-19" r="6" />
+                  <path class="robot-arm" d="M10 68 Q-11 74 -16 91" />
+                  <path class="robot-arm" d="M112 68 Q133 74 138 91" />
+                </g>
+                <g class="sparkle sparkle-one" aria-hidden="true"><path d="M30 74v26M17 87h26" /></g>
+                <g class="sparkle sparkle-two" aria-hidden="true"><path d="M365 276v24M353 288h24" /></g>
+              </svg>
+              <div class="orbital-footer"><span>five small steps</span><span id="step-count">1 of 5</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="promise-section section-wrap" id="promise" aria-labelledby="promise-title">
+          <div class="section-heading">
+            <p class="eyebrow">The promise</p>
+            <h2 id="promise-title">Calm coaching, without threats or guilt.</h2>
+          </div>
+          <div class="promise-grid">
+            <article class="promise-card promise-card-primary">
+              <span class="large-icon" aria-hidden="true">◌</span>
+              <h3>No yelling</h3>
+              <p>Chore Calm does not threaten, shame, punish, or use guilt to create urgency. It can offer a calm reminder and a clear next step.</p>
+              <p class="boundary-note"><strong>Honest boundary:</strong> other people's anger and yelling are not controlled by you, and this concept cannot control them.</p>
+            </article>
+            <article class="promise-card">
+              <span class="large-icon" aria-hidden="true">↺</span>
+              <h3>Recovery is part of the plan</h3>
+              <p>Missed a step, made a mess, or ran out of energy? The coach helps you pause, choose one repair, and return without a lecture.</p>
+            </article>
+            <article class="promise-card">
+              <span class="large-icon" aria-hidden="true">✦</span>
+              <h3>Support, not a cure</h3>
+              <p>This is a concept for gentle scaffolding. It does not cure ADHD, replace human support, or decide what is best for your life.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="story-section section-wrap" id="story" aria-labelledby="story-title">
+          <div class="story-header">
+            <div>
+              <p class="eyebrow">A narrated motion sequence</p>
+              <h2 id="story-title">Notice. Break it down. Come back gently.</h2>
+            </div>
+            <div class="story-tools" role="group" aria-label="Motion controls">
+              <button class="button button-tonal" id="play-story" type="button" aria-pressed="false">Play sequence</button>
+              <label class="switch-label"><input id="reduced-motion" type="checkbox" /><span class="switch-track" aria-hidden="true"><span></span></span><span>Reduced motion</span></label>
+            </div>
+          </div>
+          <div class="scenario-bar">
+            <label for="scenario-select"><span class="field-label">Choose a scenario</span><select id="scenario-select"></select></label>
+            <p id="scenario-description">A sink full of dishes is a lot of visual noise. Start with one handle.</p>
+          </div>
+          <div class="story-layout">
+            <div class="story-rail" aria-label="Coaching sequence">
+              <div class="rail-line" aria-hidden="true"></div>
+              <ol id="story-steps" class="story-steps"></ol>
+            </div>
+            <aside class="narration-card" aria-live="polite" aria-atomic="true">
+              <div class="narration-topline"><span class="status-dot"></span><span id="narration-kicker">Now coaching</span></div>
+              <img class="story-character" id="story-character" src="assets/chore-calm-first-step.png" alt="The companion robot carrying a folded towel toward a basket" />
+              <p id="narration-text">You noticed the task. That is already useful information.</p>
+              <p class="tone-note" id="tone-note">Steady support is available.</p>
+              <div class="narration-progress"><span id="narration-progress-bar"></span></div>
+              <div class="narration-footer"><span id="narration-step-label">Notice</span><button class="text-button" id="narrate-now" type="button">Hear this step</button></div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="controls-section section-wrap" id="controls" aria-labelledby="controls-title">
+          <div class="section-heading">
+            <p class="eyebrow">Visible boundaries</p>
+            <h2 id="controls-title">You stay in charge of the pace.</h2>
+          </div>
+          <div class="control-grid">
+            <article class="control-card">
+              <div class="control-card-icon" aria-hidden="true">◷</div>
+              <div><h3>Pause any time</h3><p>Playing the story never locks the page. Pause, scroll, or leave the sequence whenever you need.</p></div>
+            </article>
+            <article class="control-card">
+              <div class="control-card-icon" aria-hidden="true">☼</div>
+              <div><h3>Set the sensory tone</h3><p>Reduced motion stops the automatic sequence and keeps transitions quiet while preserving the same information.</p></div>
+            </article>
+            <article class="control-card">
+              <div class="control-card-icon" aria-hidden="true">⌁</div>
+              <div><h3>Choose a real scenario</h3><p>Practice with dishes, laundry, or a reset after a spill. The steps change, but the dignity stays.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="closing-section section-wrap" aria-labelledby="closing-title">
+          <div class="closing-card">
+            <div><p class="eyebrow">A concept with limits</p><h2 id="closing-title">The goal is one kind next step.</h2><p>Chore Calm is a concept page, not the primary app or runtime, and not a playable game. It is a small design study for support that is specific, calm, and honest about what it cannot change.</p></div>
+            <button class="button button-filled" id="open-settings-bottom" type="button">Explore settings <span aria-hidden="true">→</span></button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer section-wrap">
+        <span>Chore Calm concept</span><span>Offline-friendly · local assets only · no analytics</span>
+      </footer>
+    </div>
+
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+    <dialog class="surface-dialog" id="settings-dialog" aria-labelledby="settings-title">
+      <div class="dialog-header"><div><p class="eyebrow">Personalize this concept</p><h2 id="settings-title">Settings</h2></div><button class="icon-button close-dialog" type="button" aria-label="Close settings">×</button></div>
+      <div class="dialog-scroll">
+        <section class="settings-group" aria-labelledby="language-settings-title"><h3 id="language-settings-title">Language and tone</h3>
+          <label class="field-row" for="language-mode"><span><strong>Language mode</strong><small>English, Cantonese, or both</small></span><select id="language-mode"><option value="en">English</option><option value="zh">廣東話</option><option value="bilingual">Bilingual / 雙語</option></select></label>
+          <label class="field-row" for="english-funny"><span><strong>English tone</strong><small>Level 1 is steady, level 5 is playful</small></span><input id="english-funny" type="range" min="1" max="5" value="5" /></label>
+          <label class="field-row" for="cantonese-funny"><span><strong>Cantonese tone</strong><small>Level 1 is steady, level 5 is playful</small></span><input id="cantonese-funny" type="range" min="1" max="5" value="5" /></label>
+          <label class="switch-label full-row"><input id="show-emojis" type="checkbox" checked /><span class="switch-track" aria-hidden="true"><span></span></span><span>Show decorative emojis in messages</span></label>
+        </section>
+        <section class="settings-group" aria-labelledby="appearance-settings-title"><h3 id="appearance-settings-title">Appearance</h3>
+          <label class="field-row" for="theme-mode"><span><strong>Theme</strong><small>Stored on this device</small></span><select id="theme-mode"><option value="system">Use device setting</option><option value="light">Light</option><option value="dark">Dark</option></select></label>
+          <button class="button button-outlined full-row" id="reset-panel" type="button">Reset panel layout</button>
+        </section>
+        <section class="settings-group" aria-labelledby="narration-settings-title"><h3 id="narration-settings-title">Narration</h3>
+          <label class="switch-label full-row"><input id="narration-enabled" type="checkbox" /><span class="switch-track" aria-hidden="true"><span></span></span><span>Enable spoken coaching (off by default)</span></label>
+          <label class="field-row" for="narration-language"><span><strong>Narration language</strong><small>Both speaks English, then Cantonese</small></span><select id="narration-language"><option value="en">English</option><option value="zh">廣東話</option><option value="both">Both / 兩種</option></select></label>
+          <label class="field-row" for="english-voice"><span><strong>English voice</strong><small>Choose automatically uses the available voice</small></span><select id="english-voice"><option value="auto">Choose automatically</option></select></label>
+          <label class="field-row" for="cantonese-voice"><span><strong>Cantonese voice</strong><small>Uses a local Cantonese voice when available</small></span><select id="cantonese-voice"><option value="auto">Choose automatically</option></select></label>
+          <label class="field-row" for="speech-rate"><span><strong>Rate</strong><small id="speech-rate-value">1.0</small></span><input id="speech-rate" type="range" min="0.5" max="2" step="0.1" value="1" /></label>
+          <label class="field-row" for="speech-pitch"><span><strong>Pitch</strong><small id="speech-pitch-value">1.0</small></span><input id="speech-pitch" type="range" min="0.5" max="2" step="0.1" value="1" /></label>
+        </section>
+        <section class="settings-group" aria-labelledby="privacy-settings-title"><h3 id="privacy-settings-title">Local privacy</h3>
+          <p class="settings-copy">This page makes no network calls. A vocabulary file is read locally and only a validated local copy can be stored in this browser. Do not upload a file containing sensitive information on a shared device.</p>
+          <label class="file-picker full-row" for="vocabulary-file"><span class="button button-outlined">Choose local JSON</span><input id="vocabulary-file" type="file" accept="application/json,.json" /><span id="vocabulary-status">No file loaded</span></label>
+          <button class="text-button full-row" id="clear-vocabulary" type="button">Clear local vocabulary</button>
+        </section>
+      </div>
+      <div class="dialog-actions"><button class="button button-tonal close-dialog" type="button">Done</button></div>
+    </dialog>
+
+    <dialog class="surface-dialog palette-dialog" id="palette-dialog" aria-labelledby="palette-title">
+      <div class="dialog-header"><div><p class="eyebrow">Quick navigation</p><h2 id="palette-title">Command palette</h2></div><button class="icon-button close-dialog" type="button" aria-label="Close command palette">×</button></div>
+      <label class="palette-search" for="palette-input"><span aria-hidden="true">⌕</span><input id="palette-input" type="search" placeholder="Search controls and sections" autocomplete="off" /></label>
+      <ul class="palette-results" id="palette-results" role="listbox" aria-label="Command results"></ul>
+      <p class="palette-hint"><kbd>↑</kbd><kbd>↓</kbd> to move · <kbd>Enter</kbd> to open · <kbd>Esc</kbd> to close</p>
+    </dialog>
+
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
