@@ -132,7 +132,7 @@ md-card { display: block; }
 .graphic-stage::before, .graphic-stage::after { content: ""; position: absolute; z-index: 0; border-radius: 50%; background: var(--surface); opacity: .5; }
 .graphic-stage::before { width: 160px; height: 160px; top: -42px; right: -30px; }
 .graphic-stage::after { width: 110px; height: 110px; bottom: -32px; left: -20px; background: var(--tertiary-soft); }
-.graphic-badge { position: absolute; z-index: 2; left: 18px; top: 18px; padding: 8px 12px; border-radius: 999px; background: color-mix(in srgb, var(--surface) 85%, transparent); color: var(--primary); font-size: .75rem; font-weight: 800; box-shadow: 0 4px 12px rgba(31, 31, 45, .08); }
+.graphic-badge { position: absolute; z-index: 2; left: 18px; top: 18px; width: max-content; max-width: calc(100% - 36px); height: fit-content; padding: 8px 12px; border-radius: 999px; background: color-mix(in srgb, var(--surface) 85%, transparent); color: var(--primary); font-size: .75rem; font-weight: 800; box-shadow: 0 4px 12px rgba(31, 31, 45, .08); }
 .graphic-copy { padding: 24px; }
 .graphic-copy p { margin-bottom: 0; color: var(--muted); line-height: 1.65; }
 .graphic-card-loop { grid-column: 1 / -1; }
