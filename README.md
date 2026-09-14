@@ -44,10 +44,27 @@ The live response returned HTTP 200 from `main` after Pages deployment run `3487
 - [Universal feature coverage inventory](docs/coverage/universal-feature-coverage.md)
 - [Roadmap](ROADMAP.md)
 - [Handoff](HANDOFF.md)
+- [Built page evidence](evidence/headless/20260914/README.md)
+
+## Built page evidence
+
+The current published page has inspected evidence from the isolated cheap Lowlevel headless route.
+The captures show the real deployed page, not a mock or design preview.
+
+<details>
+<summary>Open representative live captures</summary>
+
+![Chore Calm desktop hero with version provenance](evidence/headless/20260914/desktop-1440x1000.png)
+
+![Chore Calm settings dialog with local controls](evidence/headless/20260914/settings-1440x1000.png)
+
+![Chore Calm emulated mobile hero with version provenance](evidence/headless/20260914/mobile-390x844.png)
+
+</details>
 
 ## Current evidence boundary
 
 The integrated `main` candidate contains the public page, local mascot assets, product-specific
 social preview, design handoff, build provenance, documentation, and Pages workflow. Local build,
-strict source validation, remote Pages deployment, live HTML, provenance, and preview-image fetch
-are verified. Built-artifact interaction proof and real captures remain open.
+strict source validation, remote Pages deployment, live HTML, provenance, preview-image fetch, and
+listed built-page evidence are verified. Complete universal-surface evidence remains open.

@@ -17,8 +17,10 @@
 
 ## Publication evidence
 
-- [ ] Capture genuine built-page screenshots and record their commit, output hash, viewport,
+- [ ] Capture the complete genuine built-page HuiShot matrix and record every commit, output hash, viewport,
   scale, theme, and privacy result.
+- [x] Add the first verified desktop, settings, and emulated-mobile captures with commit-bound
+  runtime audit evidence.
 - [x] Publish the page through GitHub Pages and replace the expected URL after verifying the
   deployed response.
 - [x] Verify the served link-preview metadata and shared-link graphic response from the published

@@ -38,9 +38,11 @@ candidate. Pages run `34875987736` completed with green build and deploy jobs fo
 
 The published URL is `https://ding-ding-projects.github.io/chore-calm/`. The live response returned
 HTTP 200, served the expected title, version surface, Open Graph metadata, mascot path, and
-commit-bound provenance. The root social preview returned HTTP 200 with 265801 bytes. Built-page
-captures, responsive review, and a release remain open. The earlier red run is retained as the
-historical default-ref failure on `chore-calm-docs`.
+commit-bound provenance. The root social preview returned HTTP 200 with 265801 bytes. The first
+verified desktop, settings, and emulated-mobile captures are committed under
+`evidence/headless/20260914/`. The complete capture matrix, physical-touch review, and a release
+remain open. The earlier red run is retained as the historical default-ref failure on
+`chore-calm-docs`.
 
 ## Public tracking
 
@@ -61,7 +63,7 @@ Pages deployment; the issue remains open because capture and complete-surface ev
 - The page still needs built-artifact interaction evidence, real captures, and responsive review.
 - The universal coverage inventory records static-page limitations and local equivalents, but most
   application-only controls are not literally implemented by this documentation scaffold.
-- Real built-artifact captures, responsive verification, and complete-surface evidence remain open.
+- Additional built-artifact captures, complete responsive verification, and complete-surface evidence remain open.
 - A static page has no installer, application update feed, operating-system credential vault,
   application-local Git history, or external editor process. The inventory documents browser-local
   equivalents where reasonable and says when no equivalent can be honest.

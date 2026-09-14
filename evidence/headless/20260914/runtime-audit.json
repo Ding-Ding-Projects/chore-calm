@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "route": "cheap-lowlevel-headless",
+  "expectedUrl": "https://ding-ding-projects.github.io/chore-calm/",
+  "source": {
+    "kind": "live",
+    "revision": "36b1c41ff685faa492a294512c546500bd5612b9",
+    "revisionVerified": true,
+    "deploymentRun": "34877909162",
+    "deploymentUrl": "https://github.com/Ding-Ding-Projects/chore-calm/actions/runs/34877909162"
+  },
+  "targetProof": {
+    "preflightSha256": "D74888E4172C334FBF5EF91C8F96844C2459A7482C9B114EF534B409F219FC06",
+    "interactionSha256": "3B89FDD7BD772B409E48FAE06D004B4319ADACA1EB0F91EA91949C040606349D",
+    "captureSha256": "8792E21E9F49D7723CDE60E10422E7EA59BEA0DCBF736FAB5507B7E7070A3A06",
+    "mobileCaptureSha256": "FCE864A2766738027D4807550B343D9031B439AC23F8AC16B715D888E7E14D4B",
+    "finalSha256": "5EB8F4576D1BC9EF1C3028855C2749A4F32C5BAEE7B246335EE707DB8BB9B4CF"
+  },
+  "tuples": [
+    {
+      "id": "desktop-hero",
+      "width": 929,
+      "height": 1004,
+      "scale": 1,
+      "mobile": false,
+      "touchEmulated": false,
+      "state": "initial hero and version provenance",
+      "capture": "desktop-1440x1000.png",
+      "sha256": "9680DE7551D94895733197395DF51E8B9DE08C61A5F615D81FBDF817949908D9"
+    },
+    {
+      "id": "desktop-settings",
+      "width": 929,
+      "height": 1004,
+      "scale": 1,
+      "mobile": false,
+      "touchEmulated": false,
+      "state": "settings dialog with language, tone, theme, narration, and local JSON controls",
+      "capture": "settings-1440x1000.png",
+      "sha256": "36AA77034A2A3B1F928C4857C83CEB347CC298D5E23D0BEC1328D4B4FA7D74E3"
+    },
+    {
+      "id": "mobile-hero",
+      "width": 390,
+      "height": 844,
+      "scale": 1,
+      "mobile": true,
+      "touchEmulated": true,
+      "evidenceKind": "emulated-mobile",
+      "state": "initial hero and version provenance",
+      "capture": "mobile-390x844.png",
+      "sha256": "F1DEE1F5F57E2EED5F81F68269FCFFE36E5785CBF56530B19D6040179EF5551A"
+    }
+  ],
+  "checks": {
+    "consoleErrorCount": 0,
+    "exceptionCount": 0,
+    "networkFailureCount": 0,
+    "desktopBodyOverflow": false,
+    "mobileBodyOverflow": false,
+    "accessibilityRootFound": true,
+    "unnamedInteractiveCount": 0,
+    "settingsInteractionVerified": true,
+    "playbackInteractionVerified": true,
+    "visibleFocusVerified": "unrun",
+    "physicalTouchDevice": "unrun"
+  },
+  "privacy": {
+    "completeTargetListProof": true,
+    "singleExpectedPageTarget": true,
+    "rawDiagnosticsReviewed": true,
+    "sensitiveDataAbsent": true,
+    "visibleDesktopUntouched": true
+  },
+  "status": "verified for the listed live tuples; complete universal-surface evidence remains open"
+}
