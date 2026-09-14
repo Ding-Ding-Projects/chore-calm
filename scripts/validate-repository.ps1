@@ -74,13 +74,13 @@ Assert-Text 'robots.txt' 'Allow: /' 'the public crawl rule'
 foreach ($page in @('index.html', 'how-it-works.html', 'adhd-and-chores.html', 'calm-promise.html', 'about-robot.html')) {
     Assert-Text $page '<meta name="robots" content="noindex, nofollow, noarchive" />' "the search suppression metadata in $page"
     $pageText = Get-Content -Raw -LiteralPath (Join-Path $Root $page)
-    if ([regex]::Matches($pageText, '<a\b').Count -ne 1) { throw "Generic navigation links must use registered Lang gui primitives in $page" }
+    if ([regex]::Matches($pageText, '<a\b').Count -ne 1) { throw "Generic navigation links must use registered Material Design 3 primitives in $page" }
     if ($pageText.Contains('<a class="button')) { throw "Generic marketing CTA anchor found in $page" }
 }
 Assert-Text 'script.js' 'event.ctrlKey && event.shiftKey' 'the command palette shortcut'
 Assert-Text 'content.js' 'five ordered bilingual steps' 'the content contract'
-Assert-Text 'md3-components.js' 'customElements.define' 'registered Lang gui primitives'
-Assert-Text 'md3-components.js' "customElements.define('md-link'" 'registered Lang gui navigation primitive'
+Assert-Text 'md3-components.js' 'customElements.define' 'registered Material Design 3 primitives'
+Assert-Text 'md3-components.js' "customElements.define('md-link'" 'registered Material Design 3 navigation primitive'
 Assert-Text 'how-it-works.html' 'How Chore Calm works' 'the how-it-works marketing page'
 Assert-Text 'adhd-and-chores.html' 'ADHD and chores' 'the ADHD marketing page'
 Assert-Text 'calm-promise.html' 'The calm promise' 'the promise marketing page'

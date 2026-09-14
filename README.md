@@ -37,7 +37,7 @@ to this static documentation concept. See `build-installer.bat` for the honest n
 
 Published URL, verified from the live response: [Chore Calm landing page](https://ding-ding-projects.github.io/chore-calm/).
 
-The live response returned HTTP 200 from `main` after Pages deployment run `34875987736`.
+The live response returned HTTP 200 from `main` after Pages deployment run `34885856594`.
 
 ## Marketing pages
 
@@ -62,8 +62,9 @@ The live response returned HTTP 200 from `main` after Pages deployment run `3487
 ## Built page evidence
 
 The Oak Kay includes inspected evidence from the isolated cheap Lowlevel headless route, bound to
-live revision `d15f749ddbf21c302b27389cc4f545fd81fde4fd`. The captures show the real deployed page,
-not a mock or design preview.
+live revision `32b55add5008266d455b908bda3c7c547283075b`. The captures show the real deployed page,
+not a mock or design preview. The same revision carries the public `robots.txt` policy, page-level
+search suppression metadata, and registered local Material Design 3 navigation and CTA primitives.
 
 <details>
 <summary>Open representative live captures</summary>

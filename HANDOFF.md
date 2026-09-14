@@ -4,7 +4,8 @@
 
 The `main` candidate integrates the public-safe documentation lane and the page implementation
 lane. The page is a dependency-free static concept surface with local mascot art, a product-
-specific social preview, build provenance, and a strict Pages workflow.
+specific social preview, build provenance, four marketing routes, page-level search suppression,
+registered local Material Design 3 navigation and CTA primitives, and a strict Pages workflow.
 
 Changed paths:
 
@@ -27,23 +28,25 @@ Changed paths:
 - `scripts/validate-repository.ps1`
 - `.github/workflows/pages.yml`
 
-The implementation also adds `index.html`, `styles.css`, `script.js`, `content.js`, the `assets/`
-mascot files, `design/README.md`, `social-preview.png`, and the provenance helpers.
+The implementation also adds `index.html`, `styles.css`, `script.js`, `content.js`, the four
+marketing route files, `md3-components.js`, `marketing-page.js`, the `assets/` mascot files,
+`design/README.md`, `social-preview.png`, and the provenance helpers.
 
 ## Verification boundary
 
 The local validation script checks the required repository contract, page entry point, metadata,
 local image inventory, documentation links, public wording boundaries, social preview dimensions,
-and build provenance. `cmd /c .\\build.bat` and strict validation pass locally at the integrated
-candidate. Pages run `34878891295` completed with green build and deploy jobs for commit
-`d15f749ddbf21c302b27389cc4f545fd81fde4fd`.
+search suppression metadata, registered marketing primitives, and build provenance. `cmd /c
+.\\build.bat` and strict validation pass locally at the integrated candidate. Pages run
+`34885856594` completed with green build and deploy jobs for commit
+`32b55add5008266d455b908bda3c7c547283075b`.
 
 The published URL is `https://ding-ding-projects.github.io/chore-calm/`. The live response returned
-HTTP 200, served the expected title, version surface, Open Graph metadata, mascot path, and
-commit-bound provenance. The root social preview returned HTTP 200 with 265801 bytes. The first
-verified desktop, settings, and emulated-mobile captures are committed under
-`evidence/headless/20260914/` and are bound to live revision
-`d15f749ddbf21c302b27389cc4f545fd81fde4fd`. The complete capture matrix, physical-touch review,
+HTTP 200, served the expected title, version surface, Open Graph metadata, mascot path, search
+suppression metadata, and commit-bound provenance. The root social preview returned HTTP 200 with
+265801 bytes. The desktop, settings, emulated-mobile, and four marketing captures are committed
+under `evidence/headless/20260914/` and are bound to live revision
+`32b55add5008266d455b908bda3c7c547283075b`. The complete capture matrix, physical-touch review,
 and a release remain open. The earlier red run is retained as the historical default-ref failure
 on `chore-calm-docs`.
 
@@ -57,9 +60,10 @@ Pages deployment; the issue remains open because capture and complete-surface ev
 
 ## 廣東話交接
 
-而家 `main` 已經合返公開安全文件、真正概念頁、本地角色圖、預覽圖同建置來源資料。離線建置、
-嚴格驗證同 Pages 發布都核實咗，線上網址係 `https://ding-ding-projects.github.io/chore-calm/`。
-真實建置截圖、響應式檢查同完整功能證據仍然要做；之前紅色執行係預設 ref 仲係 `chore-calm-docs`。
+而家 `main` 已經合返公開安全文件、真正概念頁、本地角色圖、預覽圖、四個 marketing route、
+搜尋抑制規則同 Material Design 3 導航。離線建置、嚴格驗證同 Pages 發布都核實咗，線上網址係
+`https://ding-ding-projects.github.io/chore-calm/`。真實建置截圖、響應式檢查同完整功能證據仍然
+要做；之前紅色執行係預設 ref 仲係 `chore-calm-docs`。
 
 ## Contract gaps for the next owner
 

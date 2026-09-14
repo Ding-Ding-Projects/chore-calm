@@ -4,17 +4,17 @@
   "expectedUrl": "https://ding-ding-projects.github.io/chore-calm/",
   "source": {
     "kind": "live",
-    "revision": "a356b7e8a238e078fa2403508e75f64ffecd8a57",
+    "revision": "32b55add5008266d455b908bda3c7c547283075b",
     "revisionVerified": true,
-    "deploymentRun": "34881513678",
-    "deploymentUrl": "https://github.com/Ding-Ding-Projects/chore-calm/actions/runs/34881513678"
+    "deploymentRun": "34885856594",
+    "deploymentUrl": "https://github.com/Ding-Ding-Projects/chore-calm/actions/runs/34885856594"
   },
   "targetProof": {
-    "preflightSha256": "D74888E4172C334FBF5EF91C8F96844C2459A7482C9B114EF534B409F219FC06",
-    "interactionSha256": "123A4630976CA60B533EE24966903623B5391E497086083CC9A763DC10153E57",
-    "captureSha256": "2ACD260E7BBF029CB1B96B6D892015938A257622AA97A1FC69CD1431B7617434",
-    "mobileCaptureSha256": "E8DEE56BAC70FBF59F6CA7A790DA8F923C5336143C49295551846005F6BB2C77",
-    "finalSha256": "68FCF338464980599A0266DAAED3A4CC997EA86E3FB63C1F376AE3B66BBE9F03"
+    "preflightSha256": "783CCBCCF74E33188B6C03F97A74F7CC1934C180216E3273304092CFF7F64BD8",
+    "interactionSha256": "19153AA03A8A30691C12A5B97BE994BCA0007506907D8CF83E4881AC69B927CE",
+    "captureSha256": "48B05C7CDAEE0BB7132D4156ACC1D95B07EC067512C3F94D6A50AEDAC4882290",
+    "mobileCaptureSha256": "C977C899CA4C42F2A7C39CD997A3A38944C82BEABDD5701F50E0689E5A392ABB",
+    "finalSha256": "E0759F28FB95988C26571917B2934A16741B2C8822FE71A9B6822842739F125D"
   },
   "tuples": [
     {
@@ -26,7 +26,7 @@
       "touchEmulated": false,
       "state": "hero with Break it down story step and version provenance",
       "capture": "desktop-1440x1000.png",
-      "sha256": "A7ECDE03815294FB5D1093A1EF19DD2C7820E22454CAB1E89A0C7E088115EC09"
+      "sha256": "13C37C9463B6649F48427D2F4D42BFE314D1AF58F77A48567B1E931D6DCAAAE7"
     },
     {
       "id": "desktop-settings",
@@ -37,7 +37,7 @@
       "touchEmulated": false,
       "state": "settings dialog with language, tone, theme, narration, and local JSON controls",
       "capture": "settings-1440x1000.png",
-      "sha256": "922918E0151C7A8E31E23F8E227199B7AD312DAB3D0F862A6073E4E5C7855E5F"
+      "sha256": "318657C579CC3E757A9011D28128C50150C346DAC8CA7889CD336F32B37EAEDB"
     },
     {
       "id": "mobile-hero",
@@ -49,14 +49,14 @@
       "evidenceKind": "emulated-mobile",
       "state": "initial hero and version provenance",
       "capture": "mobile-390x844.png",
-      "sha256": "08537884F2FE9C5611A9FF8B693FB7BAD2E78815C1BC508480A6DD68A27F504F"
+      "sha256": "AFB756AC7F94DFCF13975E0BE44A00559D4ED06B1644B9CBC423773F5946E261"
     }
   ],
   "marketingPages": [
-    {"path":"how-it-works.html","targetProofSha256":"A70B51C773B7042179ED39CAA9FA37823B8D799710A92051F144A87C1B66972E","capture":"marketing-how-it-works.png","sha256":"65489E661F7E31209AFAB120EABFD3209D3F6E54BDDBC8FF5518E4D3461B7480"},
-    {"path":"adhd-and-chores.html","targetProofSha256":"20EDAB880ADDB56BB7CA86238332DA8A0E63AAD0CFB2A7815F2624DB2C957615","capture":"marketing-adhd-and-chores.png","sha256":"1170F243B47DAFC35DA5214DF0D33635F8C27C43BF0D4402EE72445C6F2D0C97"},
-    {"path":"calm-promise.html","targetProofSha256":"71C22D00C4571C93EA47EFF12AEE8C5A671C31C06C8E0F495610A5202EE6FCAD","capture":"marketing-calm-promise.png","sha256":"F3BAE65E3BA10275F6181B17ADEA347E03E84D45B4B881D136C9CA4743F3D442"},
-    {"path":"about-robot.html","targetProofSha256":"CFBFFBB40D041E6B53BAC7AD1F40CFFEA855E3065F6D56E40CF80A8D326F3A6E","capture":"marketing-about-robot.png","sha256":"073745577D59BD7A9FE229F87FD34C31D82C08FCB4A57712AC36437C05FC8A17"}
+    {"path":"how-it-works.html","targetProofSha256":"BAD470956AC1239B268B53763FC1DDFC827CE351D1711B971D8ADE1185583C9D","capture":"marketing-how-it-works.png","sha256":"9D75F0EF590A84C0BF9AF97EF05BE015D174691B6DE813A48E3DC76614757953"},
+    {"path":"adhd-and-chores.html","targetProofSha256":"694BF7BC3298E1B1B6EE41DA2D560A1D409A1C81558006C7F290C014CDF60718","capture":"marketing-adhd-and-chores.png","sha256":"7FFED2E59E186EEBEBBDC5D48EAEF3877168F70197AB2F314D9358BCE2C68664"},
+    {"path":"calm-promise.html","targetProofSha256":"63C9C316F15EDF16841788265DC3FDE64461F49C83416FDCB6B8C14AFB55DA72","capture":"marketing-calm-promise.png","sha256":"5FA686E8867427AA1FE7BD5FCD4AEF81DED90B2FEA57CBEF1973AD3A597A0E77"},
+    {"path":"about-robot.html","targetProofSha256":"68A386B69E7094BD846899F3E5385FD8E18A47A3DF80FE638DA88EA0B1A2096C","capture":"marketing-about-robot.png","sha256":"FD72850E346EF8B6B266C891AB6CEFE5D25E7A17CA46E8259F208B6A1EF3E666"}
   ],
   "checks": {
     "consoleErrorCount": 0,
@@ -68,6 +68,9 @@
     "unnamedInteractiveCount": 0,
     "settingsInteractionVerified": true,
     "playbackInteractionVerified": true,
+    "searchSuppressionVerified": true,
+    "customNavigationInteractionVerified": true,
+    "genericMarketingControlsVerified": true,
     "visibleFocusVerified": "unrun",
     "physicalTouchDevice": "unrun"
   },

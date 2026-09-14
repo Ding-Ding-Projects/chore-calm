@@ -11,6 +11,8 @@
 
 ## Page implementation
 
+- [x] Expand the concept into four linked marketing routes with local graphics and provenance cards.
+- [x] Use registered local Material Design 3 primitives for marketing navigation and calls to action.
 - [ ] Verify the real static landing page entry point from the built output with a genuine capture.
 - [ ] Verify the accessible responsive animations for notice, task breakdown, coaching, recovery,
   and calm completion from the built output.
@@ -24,6 +26,8 @@
   runtime audit evidence.
 - [x] Publish the page through GitHub Pages and replace the expected URL after verifying the
   deployed response.
+- [x] Request search suppression with page-level `noindex` metadata and the published `robots.txt`
+  policy.
 - [x] Verify the served link-preview metadata and shared-link graphic response from the published
   page. A crawler-specific Discord render remains unrun.
 - [ ] Record any release or downloadable asset only after it exists and is independently verified.

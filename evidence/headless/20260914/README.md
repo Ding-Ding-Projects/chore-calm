@@ -1,14 +1,16 @@
 # Built page evidence, 2026-09-14
 
 These captures were taken from the deployed Chore Calm page through the isolated cheap
-Lowlevel headless route. They are tied to deployment run `34879684887` and live provenance
-commit `cb8eddbe6a958e351aa17714818511a72f88664a`.
+Lowlevel headless route. They are tied to deployment run `34885856594` and live provenance
+commit `32b55add5008266d455b908bda3c7c547283075b`.
 
 The desktop and settings captures are whole-window PNGs from the hidden Edge window. The portrait
 capture is page-only CDP evidence with touch emulation, so it is labelled as emulated mobile
 evidence rather than physical-device proof.
 
-The four marketing routes also have whole-window captures from the same isolated desktop.
+The four marketing routes also have whole-window captures from the same isolated desktop. Their
+navigation and calls to action use registered local Lang gui primitives, and the narrow route
+strip has a visible horizontal scrollbar cue.
 
 | State | Tuple | Capture |
 | --- | --- | --- |
@@ -31,6 +33,10 @@ The four marketing routes also have whole-window captures from the same isolated
 - Console errors and runtime exceptions were zero after the favicon repair.
 - No unexpected network failure was observed in the inspected runtime batch.
 - The four marketing routes each passed the complete one-target URL proof before capture.
+- All five published HTML pages served the exact `noindex, nofollow, noarchive` metadata, and the
+  served `robots.txt` policy remained crawlable so search engines can observe that suppression.
+- The marketing navigation and CTA probes completed through the registered custom elements, with
+  one real `md-button` route change and one real `md-link` route change.
 
 The complete machine-readable summary is [runtime-audit.json](runtime-audit.json). Raw target receipts
 and diagnostics remain in the task-owned private run directory and are not copied into this public

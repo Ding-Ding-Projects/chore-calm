@@ -1,4 +1,4 @@
-/* Local Lang gui primitives for the marketing surfaces. No CDN component library is required. */
+/* Local Material Design 3 primitives for the marketing surfaces. No CDN component library is required. */
 class MdButton extends HTMLElement {
   connectedCallback() {
     this.setAttribute('role', this.getAttribute('role') || 'button');
