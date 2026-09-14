@@ -116,7 +116,7 @@ md-card { display: block; }
 .marketing-hero-art::before { width: 210px; height: 210px; top: -70px; right: -45px; background: var(--tertiary-soft); }
 .marketing-hero-art::after { width: 140px; height: 140px; bottom: -50px; left: -25px; background: var(--primary); opacity: .18; }
 .marketing-hero-art img { position: relative; z-index: 2; width: min(100%, 390px); max-height: 430px; object-fit: contain; filter: drop-shadow(0 18px 18px rgba(31, 31, 45, .18)); animation: robot-float 3.8s ease-in-out infinite; }
-.marketing-hero-art .graphic-badge { position: absolute; z-index: 2; right: 24px; bottom: 24px; }
+.marketing-hero-art .graphic-badge { position: absolute; z-index: 2; left: auto; top: auto; right: 24px; bottom: 24px; }
 .section-lede { max-width: 720px; color: var(--muted); font-size: 1.05rem; line-height: 1.7; }
 .marketing-band { margin-block: 18px 26px; padding: 24px; border: 1px solid color-mix(in srgb, var(--outline) 25%, transparent); border-radius: var(--radius-lg); background: var(--surface); box-shadow: var(--shadow); }
 .marketing-band strong { color: var(--primary); }
