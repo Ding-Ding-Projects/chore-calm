@@ -75,7 +75,7 @@ $forbiddenMarkers = @('PERSONAL_VOCABULARY.json', 'noreply@anthropic.com')
 foreach ($file in $publicFiles) {
     if ($file.Extension.ToLowerInvariant() -in @('.png', '.jpg', '.jpeg', '.gif', '.webp', '.ico')) {
         $relative = Get-RelativePath $Root $file.FullName
-        if ($relative -ne 'social-preview.png' -and -not $relative.StartsWith('assets/', [StringComparison]::OrdinalIgnoreCase)) {
+        if ($relative -ne 'social-preview.png' -and -not $relative.StartsWith('assets/', [StringComparison]::OrdinalIgnoreCase) -and -not $relative.StartsWith('evidence/headless/', [StringComparison]::OrdinalIgnoreCase)) {
             throw "Image file is outside the declared assets folder: $relative"
         }
         continue
