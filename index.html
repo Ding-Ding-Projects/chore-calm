@@ -126,11 +126,11 @@
             </div>
             <div class="story-tools" role="group" aria-label="Motion controls">
               <md-button class="button button-tonal" id="play-story" aria-pressed="false">Play sequence</md-button>
-              <label class="switch-label"><input id="reduced-motion" type="checkbox" /><span class="switch-track" aria-hidden="true"><span></span></span><span>Reduced motion</span></label>
+              <label class="switch-label"><md-switch id="reduced-motion" aria-label="Reduced motion"></md-switch><span>Reduced motion</span></label>
             </div>
           </div>
           <div class="scenario-bar">
-            <label for="scenario-select"><span class="field-label">Choose a scenario</span><select id="scenario-select"></select></label>
+            <label for="scenario-select"><span class="field-label">Choose a scenario</span><md-select id="scenario-select" aria-label="Choose a scenario"></md-select></label>
             <p id="scenario-description">A sink full of dishes is a lot of visual noise. Start with one handle.</p>
           </div>
           <div class="story-layout">
@@ -189,26 +189,26 @@
       <div class="dialog-header"><div><p class="eyebrow">Personalize this concept</p><h2 id="settings-title">Settings</h2></div><md-icon-button class="icon-button close-dialog" aria-label="Close settings">×</md-icon-button></div>
       <div class="dialog-scroll">
         <section class="settings-group" aria-labelledby="language-settings-title"><h3 id="language-settings-title">Language and tone</h3>
-          <label class="field-row" for="language-mode"><span><strong>Language mode</strong><small>English, Cantonese, or both</small></span><select id="language-mode"><option value="en">English</option><option value="zh">廣東話</option><option value="bilingual">Bilingual / 雙語</option></select></label>
-          <label class="field-row" for="english-funny"><span><strong>English tone</strong><small>Level 1 is steady, level 5 is playful</small></span><input id="english-funny" type="range" min="1" max="5" value="5" /></label>
-          <label class="field-row" for="cantonese-funny"><span><strong>Cantonese tone</strong><small>Level 1 is steady, level 5 is playful</small></span><input id="cantonese-funny" type="range" min="1" max="5" value="5" /></label>
-          <label class="switch-label full-row"><input id="show-emojis" type="checkbox" checked /><span class="switch-track" aria-hidden="true"><span></span></span><span>Show decorative emojis in messages</span></label>
+          <label class="field-row" for="language-mode"><span><strong>Language mode</strong><small>English, Cantonese, or both</small></span><md-select id="language-mode" aria-label="Language mode"><option value="en">English</option><option value="zh">廣東話</option><option value="bilingual">Bilingual / 雙語</option></md-select></label>
+          <label class="field-row" for="english-funny"><span><strong>English tone</strong><small>Level 1 is steady, level 5 is playful</small></span><md-slider id="english-funny" min="1" max="5" value="5" aria-label="English tone"></md-slider></label>
+          <label class="field-row" for="cantonese-funny"><span><strong>Cantonese tone</strong><small>Level 1 is steady, level 5 is playful</small></span><md-slider id="cantonese-funny" min="1" max="5" value="5" aria-label="Cantonese tone"></md-slider></label>
+          <label class="switch-label full-row"><md-switch id="show-emojis" checked aria-label="Show decorative emojis in messages"></md-switch><span>Show decorative emojis in messages</span></label>
         </section>
         <section class="settings-group" aria-labelledby="appearance-settings-title"><h3 id="appearance-settings-title">Appearance</h3>
-          <label class="field-row" for="theme-mode"><span><strong>Theme</strong><small>Stored on this device</small></span><select id="theme-mode"><option value="system">Use device setting</option><option value="light">Light</option><option value="dark">Dark</option></select></label>
+          <label class="field-row" for="theme-mode"><span><strong>Theme</strong><small>Stored on this device</small></span><md-select id="theme-mode" aria-label="Theme"><option value="system">Use device setting</option><option value="light">Light</option><option value="dark">Dark</option></md-select></label>
           <md-button class="button button-outlined full-row" id="reset-panel">Reset panel layout</md-button>
         </section>
         <section class="settings-group" aria-labelledby="narration-settings-title"><h3 id="narration-settings-title">Narration</h3>
-          <label class="switch-label full-row"><input id="narration-enabled" type="checkbox" /><span class="switch-track" aria-hidden="true"><span></span></span><span>Enable spoken coaching (off by default)</span></label>
-          <label class="field-row" for="narration-language"><span><strong>Narration language</strong><small>Both speaks English, then Cantonese</small></span><select id="narration-language"><option value="en">English</option><option value="zh">廣東話</option><option value="both">Both / 兩種</option></select></label>
-          <label class="field-row" for="english-voice"><span><strong>English voice</strong><small>Choose automatically uses the available voice</small></span><select id="english-voice"><option value="auto">Choose automatically</option></select></label>
-          <label class="field-row" for="cantonese-voice"><span><strong>Cantonese voice</strong><small>Uses a local Cantonese voice when available</small></span><select id="cantonese-voice"><option value="auto">Choose automatically</option></select></label>
-          <label class="field-row" for="speech-rate"><span><strong>Rate</strong><small id="speech-rate-value">1.0</small></span><input id="speech-rate" type="range" min="0.5" max="2" step="0.1" value="1" /></label>
-          <label class="field-row" for="speech-pitch"><span><strong>Pitch</strong><small id="speech-pitch-value">1.0</small></span><input id="speech-pitch" type="range" min="0.5" max="2" step="0.1" value="1" /></label>
+          <label class="switch-label full-row"><md-switch id="narration-enabled" aria-label="Enable spoken coaching"></md-switch><span>Enable spoken coaching (off by default)</span></label>
+          <label class="field-row" for="narration-language"><span><strong>Narration language</strong><small>Both speaks English, then Cantonese</small></span><md-select id="narration-language" aria-label="Narration language"><option value="en">English</option><option value="zh">廣東話</option><option value="both">Both / 兩種</option></md-select></label>
+          <label class="field-row" for="english-voice"><span><strong>English voice</strong><small>Choose automatically uses the available voice</small></span><md-select id="english-voice" aria-label="English voice"><option value="auto">Choose automatically</option></md-select></label>
+          <label class="field-row" for="cantonese-voice"><span><strong>Cantonese voice</strong><small>Uses a local Cantonese voice when available</small></span><md-select id="cantonese-voice" aria-label="Cantonese voice"><option value="auto">Choose automatically</option></md-select></label>
+          <label class="field-row" for="speech-rate"><span><strong>Rate</strong><small id="speech-rate-value">1.0</small></span><md-slider id="speech-rate" min="0.5" max="2" step="0.1" value="1" aria-label="Speech rate"></md-slider></label>
+          <label class="field-row" for="speech-pitch"><span><strong>Pitch</strong><small id="speech-pitch-value">1.0</small></span><md-slider id="speech-pitch" min="0.5" max="2" step="0.1" value="1" aria-label="Speech pitch"></md-slider></label>
         </section>
         <section class="settings-group" aria-labelledby="privacy-settings-title"><h3 id="privacy-settings-title">Local privacy</h3>
           <p class="settings-copy">This page makes no network calls. A vocabulary file is read locally and only a validated local copy can be stored in this browser. Do not upload a file containing sensitive information on a shared device.</p>
-          <label class="file-picker full-row" for="vocabulary-file"><span class="button button-outlined">Choose local JSON</span><input id="vocabulary-file" type="file" accept="application/json,.json" /><span id="vocabulary-status">No file loaded</span></label>
+          <div class="file-picker full-row"><md-file-picker id="vocabulary-file" accept="application/json,.json" label="Choose local JSON" aria-label="Choose local JSON"></md-file-picker><span id="vocabulary-status">No file loaded</span></div>
           <md-button class="text-button full-row" id="clear-vocabulary">Clear local vocabulary</md-button>
         </section>
       </div>
@@ -217,7 +217,7 @@
 
     <dialog class="surface-dialog palette-dialog" id="palette-dialog" aria-labelledby="palette-title">
       <div class="dialog-header"><div><p class="eyebrow">Quick navigation</p><h2 id="palette-title">Command palette</h2></div><md-icon-button class="icon-button close-dialog" aria-label="Close command palette">×</md-icon-button></div>
-      <label class="palette-search" for="palette-input"><span aria-hidden="true">⌕</span><input id="palette-input" type="search" placeholder="Search controls and sections" autocomplete="off" /></label>
+      <label class="palette-search" for="palette-input"><span aria-hidden="true">⌕</span><md-search id="palette-input" placeholder="Search controls and sections" autocomplete="off" aria-label="Search controls and sections"></md-search></label>
       <ul class="palette-results" id="palette-results" role="listbox" aria-label="Command results"></ul>
       <p class="palette-hint"><kbd>↑</kbd><kbd>↓</kbd> to move · <kbd>Enter</kbd> to open · <kbd>Esc</kbd> to close</p>
     </dialog>

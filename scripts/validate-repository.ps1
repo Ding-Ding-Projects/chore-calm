@@ -76,11 +76,15 @@ foreach ($page in @('index.html', 'how-it-works.html', 'adhd-and-chores.html', '
     $pageText = Get-Content -Raw -LiteralPath (Join-Path $Root $page)
     if ([regex]::Matches($pageText, '<a\b').Count -ne 1) { throw "Generic navigation links must use registered Material Design 3 primitives in $page" }
     if ($pageText.Contains('<a class="button')) { throw "Generic marketing CTA anchor found in $page" }
+    if ([regex]::Matches($pageText, '<(input|select)\b').Count -ne 0) { throw "Native form control found outside a registered component in $page" }
 }
 Assert-Text 'script.js' 'event.ctrlKey && event.shiftKey' 'the command palette shortcut'
 Assert-Text 'content.js' 'five ordered bilingual steps' 'the content contract'
 Assert-Text 'md3-components.js' 'customElements.define' 'registered Material Design 3 primitives'
 Assert-Text 'md3-components.js' "customElements.define('md-link'" 'registered Material Design 3 navigation primitive'
+foreach ($component in @('md-select', 'md-slider', 'md-switch', 'md-file-picker', 'md-search')) {
+    Assert-Text 'md3-components.js' "customElements.define('$component'" "registered $component form primitive"
+}
 Assert-Text 'how-it-works.html' 'How Chore Calm works' 'the how-it-works marketing page'
 Assert-Text 'adhd-and-chores.html' 'ADHD and chores' 'the ADHD marketing page'
 Assert-Text 'calm-promise.html' 'The calm promise' 'the promise marketing page'
