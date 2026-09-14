@@ -38,6 +38,16 @@ Published URL, verified from the live response: [Chore Calm landing page](https:
 
 The live response returned HTTP 200 from `main` after Pages deployment run `34875987736`.
 
+## Marketing pages
+
+- [How Chore Calm works](how-it-works.html): the five-step notice, break-down, coaching, recovery,
+  and calm-completion story.
+- [ADHD and chores](adhd-and-chores.html): a respectful explanation of task initiation, working
+  memory, sequencing, sensory load, and recovery.
+- [The calm promise](calm-promise.html): no yelling, no annoyance ledger, no mess quota, patient
+  reteaching, and the honest boundary around other people's reactions.
+- [Meet the chore companion](about-robot.html): the robot concept, local graphics, and product limits.
+
 ## Documentation
 
 - [Documentation index](docs/README.md)
