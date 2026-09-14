@@ -28,6 +28,7 @@ The repository is dependency-free and offline-friendly. From a fresh Windows che
 The command validates the repository contract, counts source lines, stages the root page, local
 mascot assets, documentation, social preview, and commit-bound build provenance in `build\site`,
 and opens the generated folder when `--run` is supplied. The local build is verified.
+The same output includes the public crawler policy at `build\site\robots.txt`.
 
 The installer route is documented for contract completeness, but an installer is not applicable
 to this static documentation concept. See `build-installer.bat` for the honest no-installer result.
@@ -47,6 +48,7 @@ The live response returned HTTP 200 from `main` after Pages deployment run `3487
 - [The calm promise](calm-promise.html): no yelling, no annoyance ledger, no mess quota, patient
   reteaching, and the honest boundary around other people's reactions.
 - [Meet the chore companion](about-robot.html): the robot concept, local graphics, and product limits.
+- [Crawler directives](docs/features/crawler-directives.md): the public `robots.txt` policy and build contract.
 
 ## Documentation
 

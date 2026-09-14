@@ -13,6 +13,7 @@ Changed paths:
 - `README.md`
 - `ROADMAP.md`
 - `HANDOFF.md`
+- `robots.txt`
 - `build-manifest.json`
 - `build.bat`
 - `build-installer.bat`
@@ -20,6 +21,7 @@ Changed paths:
 - `docs/README.md`
 - `docs/features/README.md`
 - `docs/features/chore-coaching.md`
+- `docs/features/crawler-directives.md`
 - `docs/coverage/universal-feature-coverage.md`
 - `scripts/count-lines.ps1`
 - `scripts/validate-repository.ps1`

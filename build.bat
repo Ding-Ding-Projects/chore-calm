@@ -25,6 +25,7 @@ copy "%ROOT%content.js" "%ROOT%build\site\content.js" /Y >nul
 copy "%ROOT%md3-components.js" "%ROOT%build\site\md3-components.js" /Y >nul
 copy "%ROOT%marketing-page.js" "%ROOT%build\site\marketing-page.js" /Y >nul
 copy "%ROOT%favicon.svg" "%ROOT%build\site\favicon.svg" /Y >nul
+copy "%ROOT%robots.txt" "%ROOT%build\site\robots.txt" /Y >nul
 xcopy "%ROOT%assets\*" "%ROOT%build\site\assets\" /E /I /Y /Q >nul
 if errorlevel 1 exit /b 1
 copy "%ROOT%social-preview.png" "%ROOT%build\site\social-preview.png" /Y >nul

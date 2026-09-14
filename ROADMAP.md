@@ -7,6 +7,7 @@
 - [x] Add a dependency-free build manifest and root scripts.
 - [x] Add categorized documentation, a feature article, and a universal coverage inventory.
 - [x] Add a local validation route and a GitHub Pages workflow that does not run tests or lint.
+- [x] Publish a small public `robots.txt` policy and stage it through the offline build.
 
 ## Page implementation
 

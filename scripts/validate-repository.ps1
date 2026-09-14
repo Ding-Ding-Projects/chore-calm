@@ -22,11 +22,12 @@ $required = @(
     'AGENTS.md', 'README.md', 'ROADMAP.md', 'HANDOFF.md', 'build-manifest.json',
     'build.bat', 'build-installer.bat', 'download-dependencies.bat',
     'docs/README.md', 'docs/features/README.md', 'docs/features/chore-coaching.md',
+    'docs/features/crawler-directives.md',
     'docs/coverage/universal-feature-coverage.md', 'scripts/count-lines.ps1',
     'scripts/validate-repository.ps1', 'scripts/write-build-provenance.ps1',
     '.github/workflows/pages.yml', '.github/workflows/dependency-inventory.md',
     'index.html', 'styles.css', 'script.js', 'content.js', 'build-provenance.js', 'favicon.svg',
-    'md3-components.js', 'marketing-page.js', 'how-it-works.html', 'adhd-and-chores.html',
+    'robots.txt', 'md3-components.js', 'marketing-page.js', 'how-it-works.html', 'adhd-and-chores.html',
     'calm-promise.html', 'about-robot.html',
     'assets/chore-calm-mascot-hero.png', 'assets/chore-calm-first-step.png',
     'assets/chore-calm-reset-pose.png', 'social-preview.png',
@@ -68,6 +69,8 @@ Assert-Text 'index.html' 'Forgotten chores are teachable' 'the forgotten-chore t
 Assert-Text 'index.html' 'build-provenance.js' 'the provenance bootstrap'
 Assert-Text 'index.html' 'property="og:image"' 'the absolute link-preview image'
 Assert-Text 'index.html' 'twitter:card' 'the large link-preview card type'
+Assert-Text 'robots.txt' 'User-agent: *' 'the crawler user-agent rule'
+Assert-Text 'robots.txt' 'Allow: /' 'the public crawl rule'
 Assert-Text 'script.js' 'event.ctrlKey && event.shiftKey' 'the command palette shortcut'
 Assert-Text 'content.js' 'five ordered bilingual steps' 'the content contract'
 Assert-Text 'md3-components.js' 'customElements.define' 'registered Lang gui primitives'
