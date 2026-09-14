@@ -18,5 +18,5 @@ honest browser-local equivalent are recorded.
 
 The repository has no third-party packages and no network requirement for local validation. Use
 the root command from the README. The build stages the root page, local assets, documentation,
-social preview, and commit-bound provenance into `build/site`. The public URL is still pending
-remote Pages verification.
+social preview, and commit-bound provenance into `build/site`. The published URL is
+https://ding-ding-projects.github.io/chore-calm/ and its live response is verified.

@@ -19,9 +19,10 @@
 
 - [ ] Capture genuine built-page screenshots and record their commit, output hash, viewport,
   scale, theme, and privacy result.
-- [ ] Publish the page through GitHub Pages and replace the expected URL only after verifying the
+- [x] Publish the page through GitHub Pages and replace the expected URL after verifying the
   deployed response.
-- [ ] Verify the link-preview metadata and shared-link graphic from the real published page.
+- [x] Verify the served link-preview metadata and shared-link graphic response from the published
+  page. A crawler-specific Discord render remains unrun.
 - [ ] Record any release or downloadable asset only after it exists and is independently verified.
 
 Items remain unticked when implementation, built-artifact interaction, publication, or evidence is

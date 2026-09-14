@@ -26,18 +26,16 @@ The repository is dependency-free and offline-friendly. From a fresh Windows che
 
 The command validates the repository contract, counts source lines, stages the root page, local
 mascot assets, documentation, social preview, and commit-bound build provenance in `build\site`,
-and opens the generated folder when `--run` is supplied. The local build is verified, but the
-public URL remains unverified until the GitHub Pages workflow completes.
+and opens the generated folder when `--run` is supplied. The local build is verified.
 
 The installer route is documented for contract completeness, but an installer is not applicable
 to this static documentation concept. See `build-installer.bat` for the honest no-installer result.
 
 ## Public landing page
 
-Expected URL, not yet published or verified: [Chore Calm landing page](https://Ding-Ding-Projects.github.io/chore-calm/).
+Published URL, verified from the live response: [Chore Calm landing page](https://ding-ding-projects.github.io/chore-calm/).
 
-The link is a replaceable placeholder. It must not be presented as live until a real GitHub Pages
-deployment and its URL have been verified.
+The live response returned HTTP 200 from `main` after Pages deployment run `34875987736`.
 
 ## Documentation
 
@@ -50,6 +48,6 @@ deployment and its URL have been verified.
 ## Current evidence boundary
 
 The integrated `main` candidate contains the public page, local mascot assets, product-specific
-social preview, design handoff, build provenance, documentation, and Pages workflow. Local build
-and strict source validation pass. Built-artifact interaction proof, real captures, the published
-URL, and remote workflow success remain open.
+social preview, design handoff, build provenance, documentation, and Pages workflow. Local build,
+strict source validation, remote Pages deployment, live HTML, provenance, and preview-image fetch
+are verified. Built-artifact interaction proof and real captures remain open.
