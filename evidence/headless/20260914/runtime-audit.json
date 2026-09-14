@@ -4,10 +4,10 @@
   "expectedUrl": "https://ding-ding-projects.github.io/chore-calm/",
   "source": {
     "kind": "live",
-    "revision": "cb8eddbe6a958e351aa17714818511a72f88664a",
+    "revision": "a356b7e8a238e078fa2403508e75f64ffecd8a57",
     "revisionVerified": true,
-    "deploymentRun": "34879684887",
-    "deploymentUrl": "https://github.com/Ding-Ding-Projects/chore-calm/actions/runs/34879684887"
+    "deploymentRun": "34881513678",
+    "deploymentUrl": "https://github.com/Ding-Ding-Projects/chore-calm/actions/runs/34881513678"
   },
   "targetProof": {
     "preflightSha256": "D74888E4172C334FBF5EF91C8F96844C2459A7482C9B114EF534B409F219FC06",
@@ -51,6 +51,12 @@
       "capture": "mobile-390x844.png",
       "sha256": "08537884F2FE9C5611A9FF8B693FB7BAD2E78815C1BC508480A6DD68A27F504F"
     }
+  ],
+  "marketingPages": [
+    {"path":"how-it-works.html","targetProofSha256":"A70B51C773B7042179ED39CAA9FA37823B8D799710A92051F144A87C1B66972E","capture":"marketing-how-it-works.png","sha256":"65489E661F7E31209AFAB120EABFD3209D3F6E54BDDBC8FF5518E4D3461B7480"},
+    {"path":"adhd-and-chores.html","targetProofSha256":"20EDAB880ADDB56BB7CA86238332DA8A0E63AAD0CFB2A7815F2624DB2C957615","capture":"marketing-adhd-and-chores.png","sha256":"1170F243B47DAFC35DA5214DF0D33635F8C27C43BF0D4402EE72445C6F2D0C97"},
+    {"path":"calm-promise.html","targetProofSha256":"71C22D00C4571C93EA47EFF12AEE8C5A671C31C06C8E0F495610A5202EE6FCAD","capture":"marketing-calm-promise.png","sha256":"F3BAE65E3BA10275F6181B17ADEA347E03E84D45B4B881D136C9CA4743F3D442"},
+    {"path":"about-robot.html","targetProofSha256":"CFBFFBB40D041E6B53BAC7AD1F40CFFEA855E3065F6D56E40CF80A8D326F3A6E","capture":"marketing-about-robot.png","sha256":"073745577D59BD7A9FE229F87FD34C31D82C08FCB4A57712AC36437C05FC8A17"}
   ],
   "checks": {
     "consoleErrorCount": 0,
