@@ -71,6 +71,9 @@ Assert-Text 'index.html' 'property="og:image"' 'the absolute link-preview image'
 Assert-Text 'index.html' 'twitter:card' 'the large link-preview card type'
 Assert-Text 'robots.txt' 'User-agent: *' 'the crawler user-agent rule'
 Assert-Text 'robots.txt' 'Allow: /' 'the public crawl rule'
+foreach ($page in @('index.html', 'how-it-works.html', 'adhd-and-chores.html', 'calm-promise.html', 'about-robot.html')) {
+    Assert-Text $page '<meta name="robots" content="noindex, nofollow, noarchive" />' "the search suppression metadata in $page"
+}
 Assert-Text 'script.js' 'event.ctrlKey && event.shiftKey' 'the command palette shortcut'
 Assert-Text 'content.js' 'five ordered bilingual steps' 'the content contract'
 Assert-Text 'md3-components.js' 'customElements.define' 'registered Lang gui primitives'

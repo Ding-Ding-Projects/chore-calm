@@ -1,2 +1,3 @@
+# Keep crawl access available so Google can observe the page-level noindex metadata.
 User-agent: *
 Allow: /
