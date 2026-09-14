@@ -1,8 +1,10 @@
 /* Public content model. Keep product copy separate from interaction logic. */
+const provenance = window.CHORE_CALM_BUILD_PROVENANCE || {};
 window.CHORE_CALM_CONTENT = {
   metadata: {
-    version: "0.1.0",
-    updatedAt: "Unavailable without build provenance",
+    version: provenance.version || "0.1.0",
+    updatedAt: provenance.updatedAt || "Unavailable without build provenance",
+    commit: provenance.commit || null,
     updatedAtLabel: "Updated at"
   },
   scenarios: [

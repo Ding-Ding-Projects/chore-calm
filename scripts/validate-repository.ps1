@@ -23,8 +23,12 @@ $required = @(
     'build.bat', 'build-installer.bat', 'download-dependencies.bat',
     'docs/README.md', 'docs/features/README.md', 'docs/features/chore-coaching.md',
     'docs/coverage/universal-feature-coverage.md', 'scripts/count-lines.ps1',
-    'scripts/validate-repository.ps1', '.github/workflows/pages.yml',
-    '.github/workflows/dependency-inventory.md'
+    'scripts/validate-repository.ps1', 'scripts/write-build-provenance.ps1',
+    '.github/workflows/pages.yml', '.github/workflows/dependency-inventory.md',
+    'index.html', 'styles.css', 'script.js', 'content.js', 'build-provenance.js',
+    'assets/chore-calm-mascot-hero.png', 'assets/chore-calm-first-step.png',
+    'assets/chore-calm-reset-pose.png', 'social-preview.png',
+    'scripts/generate-social-preview.ps1'
 )
 
 function Assert-Text([string]$Path, [string]$Needle, [string]$Description) {
@@ -56,6 +60,12 @@ Assert-Text 'docs/coverage/universal-feature-coverage.md' '| U39 |' 'the final u
 Assert-Text '.github/workflows/pages.yml' 'workflow_dispatch' 'manual Pages dispatch'
 Assert-Text '.github/workflows/pages.yml' 'windows-2025' 'the Windows-only workflow scope'
 Assert-Text '.github/workflows/dependency-inventory.md' 'build' 'the workflow dependency inventory'
+Assert-Text 'index.html' 'You do not need to be yelled at to begin.' 'the concept hero'
+Assert-Text 'index.html' 'build-provenance.js' 'the provenance bootstrap'
+Assert-Text 'index.html' 'property="og:image"' 'the absolute link-preview image'
+Assert-Text 'index.html' 'twitter:card' 'the large link-preview card type'
+Assert-Text 'script.js' 'event.ctrlKey && event.shiftKey' 'the command palette shortcut'
+Assert-Text 'content.js' 'five ordered bilingual steps' 'the content contract'
 
 $publicFiles = Get-ChildItem -LiteralPath $Root -File -Recurse | Where-Object {
     $_.FullName -notlike "*$([IO.Path]::DirectorySeparatorChar)build$([IO.Path]::DirectorySeparatorChar)*" -and
@@ -64,7 +74,11 @@ $publicFiles = Get-ChildItem -LiteralPath $Root -File -Recurse | Where-Object {
 $forbiddenMarkers = @('PERSONAL_VOCABULARY.json', 'noreply@anthropic.com')
 foreach ($file in $publicFiles) {
     if ($file.Extension.ToLowerInvariant() -in @('.png', '.jpg', '.jpeg', '.gif', '.webp', '.ico')) {
-        throw "Image file is outside this documentation lane: $(Get-RelativePath $Root $file.FullName)"
+        $relative = Get-RelativePath $Root $file.FullName
+        if ($relative -ne 'social-preview.png' -and -not $relative.StartsWith('assets/', [StringComparison]::OrdinalIgnoreCase)) {
+            throw "Image file is outside the declared assets folder: $relative"
+        }
+        continue
     }
     if ($file.Length -lt 2MB -and $file.Extension.ToLowerInvariant() -in @('.md', '.bat', '.ps1', '.json', '.yml', '.yaml', '.html', '.txt')) {
         $text = Get-Content -Raw -LiteralPath $file.FullName
@@ -74,9 +88,9 @@ foreach ($file in $publicFiles) {
     }
 }
 
-$strictEntry = Join-Path $Root 'docs/index.html'
+$strictEntry = Join-Path $Root 'index.html'
 if ($Mode -eq 'Strict' -and -not (Test-Path -LiteralPath $strictEntry -PathType Leaf)) {
-    throw 'Strict site validation requires docs/index.html from the page implementation lane.'
+    throw 'Strict site validation requires the root index.html page entry point.'
 }
 
 Write-Output "Validated public-safe scaffold in mode $Mode."
@@ -85,4 +99,14 @@ if (Test-Path -LiteralPath $strictEntry -PathType Leaf) {
 } else {
     Write-Output 'Site entry point: pending page implementation lane.'
 }
-Write-Output 'Images: none in the checked source tree.'
+Add-Type -AssemblyName System.Drawing
+$previewPath = Join-Path $Root 'social-preview.png'
+$preview = [Drawing.Image]::FromFile($previewPath)
+try {
+    if ($preview.Width -ne 1200 -or $preview.Height -ne 630) {
+        throw "social-preview.png must be 1200x630, found $($preview.Width)x$($preview.Height)."
+    }
+} finally {
+    $preview.Dispose()
+}
+Write-Output 'Page assets: local mascot files and 1200x630 social preview decoded successfully.'

@@ -17,14 +17,24 @@ if errorlevel 1 exit /b 1
 
 xcopy "%ROOT%docs\*" "%ROOT%build\site\" /E /I /Y /Q >nul
 if errorlevel 1 exit /b 1
+copy "%ROOT%index.html" "%ROOT%build\site\index.html" /Y >nul
+copy "%ROOT%styles.css" "%ROOT%build\site\styles.css" /Y >nul
+copy "%ROOT%script.js" "%ROOT%build\site\script.js" /Y >nul
+copy "%ROOT%content.js" "%ROOT%build\site\content.js" /Y >nul
+xcopy "%ROOT%assets\*" "%ROOT%build\site\assets\" /E /I /Y /Q >nul
+if errorlevel 1 exit /b 1
+copy "%ROOT%social-preview.png" "%ROOT%build\site\social-preview.png" /Y >nul
+if errorlevel 1 exit /b 1
 copy "%ROOT%README.md" "%ROOT%build\site\README.md" /Y >nul
 copy "%ROOT%build-manifest.json" "%ROOT%build\site\build-manifest.json" /Y >nul
+
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%ROOT%scripts\write-build-provenance.ps1" -Output "%ROOT%build\site\build-provenance.js"
+if errorlevel 1 exit /b 1
 
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%ROOT%scripts\count-lines.ps1" -Output "build/line-count.json" > "%ROOT%build\line-count.txt"
 if errorlevel 1 exit /b 1
 copy "%ROOT%build\line-count.json" "%ROOT%build\site\line-count.json" /Y >nul
 
-if not exist "%ROOT%docs\index.html" echo Site entry point pending the page implementation lane. > "%ROOT%build\site\SITE-ENTRY-PENDING.txt"
 echo Build staging complete: "%ROOT%build\site"
 if "%RUN_AFTER_BUILD%"=="1" explorer.exe "%ROOT%build\site"
 exit /b 0

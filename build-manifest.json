@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "project": "chore-calm",
-  "version": "0.0.0-scaffold",
+  "version": "0.1.0",
   "updatedAt": "unavailable",
-  "updatedAtReason": "No release or build provenance has been recorded for the scaffold.",
+  "updatedAtReason": "The built output derives this value from the exact Git commit provenance; no built output is claimed until the build runs.",
   "build": {
     "entry": "build.bat",
     "canonicalCommand": ".\\build.bat --run",
-    "mode": "offline-static-site-scaffold",
-    "sourceDirectory": "docs",
+    "mode": "offline-static-site",
+    "sourceDirectory": ".",
     "outputDirectory": "build/site",
     "lineCountOutput": "build/line-count.json"
   },
@@ -28,14 +28,22 @@
     "docs/coverage/universal-feature-coverage.md",
     "scripts/count-lines.ps1",
     "scripts/validate-repository.ps1",
+    "scripts/write-build-provenance.ps1",
     "build.bat",
     "build-installer.bat",
     "download-dependencies.bat",
     ".github/workflows/pages.yml",
-    ".github/workflows/dependency-inventory.md"
+    ".github/workflows/dependency-inventory.md",
+    "index.html",
+    "styles.css",
+    "script.js",
+    "content.js",
+    "build-provenance.js",
+    "social-preview.png",
+    "scripts/generate-social-preview.ps1"
   ],
   "siteEntryPoint": {
-    "path": "docs/index.html",
-    "status": "pending-page-implementation-lane"
+    "path": "index.html",
+    "status": "implemented-pending-built-proof"
   }
 }
