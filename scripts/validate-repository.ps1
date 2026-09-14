@@ -50,7 +50,7 @@ if ($manifest.build.canonicalCommand -ne '.\build.bat --run') { throw 'Manifest 
 if ($manifest.installer.applicable -ne $false) { throw 'Static-site installer applicability must remain false.' }
 
 Assert-Text 'README.md' '.\build.bat --run' 'the fresh Windows build command'
-Assert-Text 'README.md' 'https://Ding-Ding-Projects.github.io/chore-calm/' 'the replaceable landing-page URL placeholder'
+Assert-Text 'README.md' 'https://ding-ding-projects.github.io/chore-calm/' 'the verified published page URL'
 Assert-Text 'README.md' 'ADHD can make chores harder through initiation' 'the ADHD scope boundary'
 Assert-Text 'AGENTS.md' '## Agent conversation vocabulary' 'the sanitized agent block'
 Assert-Text 'AGENTS.md' 'Published writing uses ordinary professional English' 'the public-writing boundary'
