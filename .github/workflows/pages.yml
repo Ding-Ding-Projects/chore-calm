@@ -1,0 +1,42 @@
+name: Publish static documentation
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: windows-2025
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Bootstrap and validate the offline scaffold
+        shell: cmd
+        run: call build.bat
+      - name: Require the page entry point before publication
+        shell: powershell
+        run: ./scripts/validate-repository.ps1 -Mode Strict
+      - name: Upload Pages package
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site
+
+  deploy:
+    needs: build
+    runs-on: windows-2025
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

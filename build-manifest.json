@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "project": "chore-calm",
+  "version": "0.0.0-scaffold",
+  "updatedAt": "unavailable",
+  "updatedAtReason": "No release or build provenance has been recorded for the scaffold.",
+  "build": {
+    "entry": "build.bat",
+    "canonicalCommand": ".\\build.bat --run",
+    "mode": "offline-static-site-scaffold",
+    "sourceDirectory": "docs",
+    "outputDirectory": "build/site",
+    "lineCountOutput": "build/line-count.json"
+  },
+  "dependencies": [],
+  "installer": {
+    "applicable": false,
+    "reason": "This repository describes a static documentation concept and has no installed application payload."
+  },
+  "requiredPaths": [
+    "AGENTS.md",
+    "README.md",
+    "ROADMAP.md",
+    "HANDOFF.md",
+    "docs/README.md",
+    "docs/features/README.md",
+    "docs/features/chore-coaching.md",
+    "docs/coverage/universal-feature-coverage.md",
+    "scripts/count-lines.ps1",
+    "scripts/validate-repository.ps1",
+    "build.bat",
+    "build-installer.bat",
+    "download-dependencies.bat",
+    ".github/workflows/pages.yml",
+    ".github/workflows/dependency-inventory.md"
+  ],
+  "siteEntryPoint": {
+    "path": "docs/index.html",
+    "status": "pending-page-implementation-lane"
+  }
+}
