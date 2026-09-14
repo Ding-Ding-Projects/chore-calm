@@ -18,9 +18,12 @@ if errorlevel 1 exit /b 1
 xcopy "%ROOT%docs\*" "%ROOT%build\site\" /E /I /Y /Q >nul
 if errorlevel 1 exit /b 1
 copy "%ROOT%index.html" "%ROOT%build\site\index.html" /Y >nul
+xcopy "%ROOT%*.html" "%ROOT%build\site\" /Y /I /Q >nul
 copy "%ROOT%styles.css" "%ROOT%build\site\styles.css" /Y >nul
 copy "%ROOT%script.js" "%ROOT%build\site\script.js" /Y >nul
 copy "%ROOT%content.js" "%ROOT%build\site\content.js" /Y >nul
+copy "%ROOT%md3-components.js" "%ROOT%build\site\md3-components.js" /Y >nul
+copy "%ROOT%marketing-page.js" "%ROOT%build\site\marketing-page.js" /Y >nul
 copy "%ROOT%favicon.svg" "%ROOT%build\site\favicon.svg" /Y >nul
 xcopy "%ROOT%assets\*" "%ROOT%build\site\assets\" /E /I /Y /Q >nul
 if errorlevel 1 exit /b 1

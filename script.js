@@ -109,13 +109,13 @@
     list.innerHTML = activeScenario.steps.map((step, index) => {
       const selected = index === activeStep;
       return `<li class="story-step ${selected ? "is-current" : ""}" data-index="${index}">
-        <button class="step-marker" type="button" aria-label="Go to step ${index + 1}: ${escapeHtml(localized(step.label))}" aria-current="${selected ? "step" : "false"}">${index + 1}</button>
+        <md-step-marker class="step-marker" aria-label="Go to step ${index + 1}: ${escapeHtml(localized(step.label))}" aria-current="${selected ? "step" : "false"}">${index + 1}</md-step-marker>
         <div><h3>${bilingual(step.label)}</h3><p class="primary-copy">${escapeHtml(localized(step.text))}</p><p class="secondary-copy">${escapeHtml(step.text.zh)}</p></div>
       </li>`;
     }).join("");
     list.querySelectorAll(".story-step").forEach((row) => {
       row.addEventListener("click", (event) => {
-        if (event.target.closest("button")) setStep(Number(row.dataset.index), true);
+        if (event.target.closest(".step-marker")) setStep(Number(row.dataset.index), true);
       });
       row.querySelector(".step-marker").addEventListener("keydown", (event) => {
         if (event.key === "ArrowDown" || event.key === "ArrowRight") { event.preventDefault(); focusStep(Number(row.dataset.index) + 1); }
@@ -232,8 +232,8 @@
   function renderPalette(query = "") {
     const lower = query.toLowerCase();
     const matches = paletteCommands.filter((command) => command.label.toLowerCase().includes(lower) || command.hint.toLowerCase().includes(lower));
-    $("palette-results").innerHTML = matches.length ? matches.map((command, index) => `<li><button type="button" role="option" aria-selected="${index === paletteIndex}" data-palette-index="${paletteCommands.indexOf(command)}"><span>${escapeHtml(command.label)}</span><small>${escapeHtml(command.hint)}</small></button></li>`).join("") : `<li class="palette-empty">No matching command</li>`;
-    $("palette-results").querySelectorAll("button").forEach((button) => button.addEventListener("click", () => { paletteCommands[Number(button.dataset.paletteIndex)].action(); $("palette-dialog").close(); }));
+    $("palette-results").innerHTML = matches.length ? matches.map((command, index) => `<li><md-button role="option" aria-selected="${index === paletteIndex}" data-palette-index="${paletteCommands.indexOf(command)}"><span>${escapeHtml(command.label)}</span><small>${escapeHtml(command.hint)}</small></md-button></li>`).join("") : `<li class="palette-empty">No matching command</li>`;
+    $("palette-results").querySelectorAll("md-button").forEach((button) => button.addEventListener("click", () => { paletteCommands[Number(button.dataset.paletteIndex)].action(); $("palette-dialog").close(); }));
   }
 
   function bindEvents() {
@@ -262,7 +262,7 @@
     $("clear-vocabulary").addEventListener("click", () => { settings.vocabulary = null; saveSettings(); renderMetadata(); announce("Local vocabulary cleared", "Original page wording is active again."); });
     $("vocabulary-file").addEventListener("change", async (event) => { const file = event.target.files[0]; if (!file) return; try { const validated = validateVocabulary(file, await file.text()); settings.vocabulary = validated; saveSettings(); renderMetadata(); announce("Local vocabulary loaded", "Validated content stays in this browser and is not sent anywhere."); } catch (error) { event.target.value = ""; announce("Local vocabulary not loaded", error.message); } });
     $("palette-input").addEventListener("input", (event) => { paletteIndex = 0; renderPalette(event.target.value); });
-    $("palette-input").addEventListener("keydown", (event) => { const buttons = [...$("palette-results").querySelectorAll("button")]; if (event.key === "ArrowDown" || event.key === "ArrowUp") { event.preventDefault(); paletteIndex = Math.max(0, Math.min(buttons.length - 1, paletteIndex + (event.key === "ArrowDown" ? 1 : -1))); buttons[paletteIndex]?.focus(); } if (event.key === "Enter" && buttons[paletteIndex]) buttons[paletteIndex].click(); });
+    $("palette-input").addEventListener("keydown", (event) => { const buttons = [...$("palette-results").querySelectorAll("md-button")]; if (event.key === "ArrowDown" || event.key === "ArrowUp") { event.preventDefault(); paletteIndex = Math.max(0, Math.min(buttons.length - 1, paletteIndex + (event.key === "ArrowDown" ? 1 : -1))); buttons[paletteIndex]?.focus(); } if (event.key === "Enter" && buttons[paletteIndex]) buttons[paletteIndex].click(); });
     document.addEventListener("keydown", (event) => { if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "f") { event.preventDefault(); openDialog($("palette-dialog")); $("palette-input").value = ""; renderPalette(); $("palette-input").focus(); } if (event.key === "Escape") closeDialogs(); });
     if ("speechSynthesis" in window) { window.speechSynthesis.addEventListener("voiceschanged", populateVoices); populateVoices(); }
   }

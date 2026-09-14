@@ -30,10 +30,11 @@
             <small>chore companion concept</small>
           </span>
         </a>
+        <nav class="page-nav" aria-label="Marketing pages"><a href="index.html" aria-current="page">Home</a><a href="how-it-works.html">How it works</a><a href="adhd-and-chores.html">ADHD and chores</a><a href="calm-promise.html">The calm promise</a><a href="about-robot.html">Meet the robot</a></nav>
         <div class="top-actions">
           <span class="concept-chip">Concept page</span>
-          <button class="icon-button" id="open-settings" type="button" aria-label="Open settings" aria-haspopup="dialog" aria-controls="settings-dialog" title="Open settings">⚙</button>
-          <button class="icon-button" id="open-palette" type="button" aria-label="Open command palette" aria-haspopup="dialog" aria-controls="palette-dialog" title="Open command palette">⌘</button>
+          <md-icon-button class="icon-button" id="open-settings" aria-label="Open settings" aria-haspopup="dialog" aria-controls="settings-dialog" title="Open settings">⚙</md-icon-button>
+          <md-icon-button class="icon-button" id="open-palette" aria-label="Open command palette" aria-haspopup="dialog" aria-controls="palette-dialog" title="Open command palette">⌘</md-icon-button>
         </div>
       </header>
 
@@ -44,8 +45,8 @@
             <h1 id="hero-title">You do not need to be yelled at to begin.</h1>
             <p class="hero-lede">ADHD can make task initiation, working memory, sequencing, sensory load, and recovery from an imperfect chore genuinely difficult. Chore Calm turns that moment into a small, steady next step, then teaches it again when you forget.</p>
             <div class="hero-actions" role="group" aria-label="Explore the concept">
-              <button class="button button-filled" id="start-story" type="button">Start the calm loop <span aria-hidden="true">→</span></button>
-              <button class="button button-tonal" id="scroll-promise" type="button">Read the boundary</button>
+              <md-button class="button button-filled" id="start-story">Start the calm loop <span aria-hidden="true">→</span></md-button>
+              <md-button class="button button-tonal" id="scroll-promise">Read the boundary</md-button>
             </div>
             <div class="provenance-card" aria-label="Concept provenance">
               <div><span class="meta-label">Version</span><strong id="version-value">0.1.0</strong></div>
@@ -123,7 +124,7 @@
               <h2 id="story-title">Notice. Break it down. Come back gently.</h2>
             </div>
             <div class="story-tools" role="group" aria-label="Motion controls">
-              <button class="button button-tonal" id="play-story" type="button" aria-pressed="false">Play sequence</button>
+              <md-button class="button button-tonal" id="play-story" aria-pressed="false">Play sequence</md-button>
               <label class="switch-label"><input id="reduced-motion" type="checkbox" /><span class="switch-track" aria-hidden="true"><span></span></span><span>Reduced motion</span></label>
             </div>
           </div>
@@ -142,7 +143,7 @@
               <p id="narration-text">You noticed the task. That is already useful information.</p>
               <p class="tone-note" id="tone-note">Steady support is available.</p>
               <div class="narration-progress"><span id="narration-progress-bar"></span></div>
-              <div class="narration-footer"><span id="narration-step-label">Notice</span><button class="text-button" id="narrate-now" type="button">Hear this step</button></div>
+              <div class="narration-footer"><span id="narration-step-label">Notice</span><md-button class="text-button" id="narrate-now">Hear this step</md-button></div>
             </aside>
           </div>
         </section>
@@ -171,7 +172,7 @@
         <section class="closing-section section-wrap" aria-labelledby="closing-title">
           <div class="closing-card">
             <div><p class="eyebrow">A concept with limits</p><h2 id="closing-title">The goal is one kind next step.</h2><p>Chore Calm is a concept page, not the primary app or runtime, and not a playable game. It is a small design study for support that is specific, calm, and honest about what it cannot change.</p></div>
-            <button class="button button-filled" id="open-settings-bottom" type="button">Explore settings <span aria-hidden="true">→</span></button>
+            <md-button class="button button-filled" id="open-settings-bottom">Explore settings <span aria-hidden="true">→</span></md-button>
           </div>
         </section>
       </main>
@@ -184,7 +185,7 @@
     <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
 
     <dialog class="surface-dialog" id="settings-dialog" aria-labelledby="settings-title">
-      <div class="dialog-header"><div><p class="eyebrow">Personalize this concept</p><h2 id="settings-title">Settings</h2></div><button class="icon-button close-dialog" type="button" aria-label="Close settings">×</button></div>
+      <div class="dialog-header"><div><p class="eyebrow">Personalize this concept</p><h2 id="settings-title">Settings</h2></div><md-icon-button class="icon-button close-dialog" aria-label="Close settings">×</md-icon-button></div>
       <div class="dialog-scroll">
         <section class="settings-group" aria-labelledby="language-settings-title"><h3 id="language-settings-title">Language and tone</h3>
           <label class="field-row" for="language-mode"><span><strong>Language mode</strong><small>English, Cantonese, or both</small></span><select id="language-mode"><option value="en">English</option><option value="zh">廣東話</option><option value="bilingual">Bilingual / 雙語</option></select></label>
@@ -194,7 +195,7 @@
         </section>
         <section class="settings-group" aria-labelledby="appearance-settings-title"><h3 id="appearance-settings-title">Appearance</h3>
           <label class="field-row" for="theme-mode"><span><strong>Theme</strong><small>Stored on this device</small></span><select id="theme-mode"><option value="system">Use device setting</option><option value="light">Light</option><option value="dark">Dark</option></select></label>
-          <button class="button button-outlined full-row" id="reset-panel" type="button">Reset panel layout</button>
+          <md-button class="button button-outlined full-row" id="reset-panel">Reset panel layout</md-button>
         </section>
         <section class="settings-group" aria-labelledby="narration-settings-title"><h3 id="narration-settings-title">Narration</h3>
           <label class="switch-label full-row"><input id="narration-enabled" type="checkbox" /><span class="switch-track" aria-hidden="true"><span></span></span><span>Enable spoken coaching (off by default)</span></label>
@@ -207,20 +208,21 @@
         <section class="settings-group" aria-labelledby="privacy-settings-title"><h3 id="privacy-settings-title">Local privacy</h3>
           <p class="settings-copy">This page makes no network calls. A vocabulary file is read locally and only a validated local copy can be stored in this browser. Do not upload a file containing sensitive information on a shared device.</p>
           <label class="file-picker full-row" for="vocabulary-file"><span class="button button-outlined">Choose local JSON</span><input id="vocabulary-file" type="file" accept="application/json,.json" /><span id="vocabulary-status">No file loaded</span></label>
-          <button class="text-button full-row" id="clear-vocabulary" type="button">Clear local vocabulary</button>
+          <md-button class="text-button full-row" id="clear-vocabulary">Clear local vocabulary</md-button>
         </section>
       </div>
-      <div class="dialog-actions"><button class="button button-tonal close-dialog" type="button">Done</button></div>
+      <div class="dialog-actions"><md-button class="button button-tonal close-dialog">Done</md-button></div>
     </dialog>
 
     <dialog class="surface-dialog palette-dialog" id="palette-dialog" aria-labelledby="palette-title">
-      <div class="dialog-header"><div><p class="eyebrow">Quick navigation</p><h2 id="palette-title">Command palette</h2></div><button class="icon-button close-dialog" type="button" aria-label="Close command palette">×</button></div>
+      <div class="dialog-header"><div><p class="eyebrow">Quick navigation</p><h2 id="palette-title">Command palette</h2></div><md-icon-button class="icon-button close-dialog" aria-label="Close command palette">×</md-icon-button></div>
       <label class="palette-search" for="palette-input"><span aria-hidden="true">⌕</span><input id="palette-input" type="search" placeholder="Search controls and sections" autocomplete="off" /></label>
       <ul class="palette-results" id="palette-results" role="listbox" aria-label="Command results"></ul>
       <p class="palette-hint"><kbd>↑</kbd><kbd>↓</kbd> to move · <kbd>Enter</kbd> to open · <kbd>Esc</kbd> to close</p>
     </dialog>
 
     <script src="build-provenance.js"></script>
+    <script src="md3-components.js"></script>
     <script src="content.js"></script>
     <script src="script.js"></script>
   </body>

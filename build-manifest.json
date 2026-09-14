@@ -40,6 +40,12 @@
     "content.js",
     "build-provenance.js",
     "favicon.svg",
+    "md3-components.js",
+    "marketing-page.js",
+    "how-it-works.html",
+    "adhd-and-chores.html",
+    "calm-promise.html",
+    "about-robot.html",
     "social-preview.png",
     "scripts/generate-social-preview.ps1"
   ],

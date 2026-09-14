@@ -26,6 +26,8 @@ $required = @(
     'scripts/validate-repository.ps1', 'scripts/write-build-provenance.ps1',
     '.github/workflows/pages.yml', '.github/workflows/dependency-inventory.md',
     'index.html', 'styles.css', 'script.js', 'content.js', 'build-provenance.js', 'favicon.svg',
+    'md3-components.js', 'marketing-page.js', 'how-it-works.html', 'adhd-and-chores.html',
+    'calm-promise.html', 'about-robot.html',
     'assets/chore-calm-mascot-hero.png', 'assets/chore-calm-first-step.png',
     'assets/chore-calm-reset-pose.png', 'social-preview.png',
     'scripts/generate-social-preview.ps1'
@@ -68,6 +70,11 @@ Assert-Text 'index.html' 'property="og:image"' 'the absolute link-preview image'
 Assert-Text 'index.html' 'twitter:card' 'the large link-preview card type'
 Assert-Text 'script.js' 'event.ctrlKey && event.shiftKey' 'the command palette shortcut'
 Assert-Text 'content.js' 'five ordered bilingual steps' 'the content contract'
+Assert-Text 'md3-components.js' 'customElements.define' 'registered Lang gui primitives'
+Assert-Text 'how-it-works.html' 'How Chore Calm works' 'the how-it-works marketing page'
+Assert-Text 'adhd-and-chores.html' 'ADHD and chores' 'the ADHD marketing page'
+Assert-Text 'calm-promise.html' 'The calm promise' 'the promise marketing page'
+Assert-Text 'about-robot.html' 'Meet the chore companion' 'the robot marketing page'
 
 $publicFiles = Get-ChildItem -LiteralPath $Root -File -Recurse | Where-Object {
     $_.FullName -notlike "*$([IO.Path]::DirectorySeparatorChar)build$([IO.Path]::DirectorySeparatorChar)*" -and
