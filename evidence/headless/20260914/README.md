@@ -1,8 +1,8 @@
 # Built page evidence, 2026-09-14
 
 These captures were taken from the deployed Chore Calm page through the isolated cheap
-Lowlevel headless route. They are tied to deployment run `34878891295` and live provenance
-commit `d15f749ddbf21c302b27389cc4f545fd81fde4fd`.
+Lowlevel headless route. They are tied to deployment run `34879684887` and live provenance
+commit `cb8eddbe6a958e351aa17714818511a72f88664a`.
 
 The desktop and settings captures are whole-window PNGs from the hidden Edge window. The portrait
 capture is page-only CDP evidence with touch emulation, so it is labelled as emulated mobile
@@ -10,7 +10,7 @@ evidence rather than physical-device proof.
 
 | State | Tuple | Capture |
 | --- | --- | --- |
-| Hero with the Break it down story step and version provenance | 929 x 1004, scale 1, English, light | [desktop-1440x1000.png](desktop-1440x1000.png) |
+| Hero with the no-quota teaching copy and version provenance | 929 x 1004, scale 1, English, light | [desktop-1440x1000.png](desktop-1440x1000.png) |
 | Settings with language, tone, theme, narration, and local JSON controls | 929 x 1004, scale 1, English, light | [settings-1440x1000.png](settings-1440x1000.png) |
 | Narrow initial hero and provenance | 390 x 844, scale 1, touch-emulated, English, light | [mobile-390x844.png](mobile-390x844.png) |
 

@@ -4,17 +4,17 @@
   "expectedUrl": "https://ding-ding-projects.github.io/chore-calm/",
   "source": {
     "kind": "live",
-    "revision": "d15f749ddbf21c302b27389cc4f545fd81fde4fd",
+    "revision": "cb8eddbe6a958e351aa17714818511a72f88664a",
     "revisionVerified": true,
-    "deploymentRun": "34878891295",
-    "deploymentUrl": "https://github.com/Ding-Ding-Projects/chore-calm/actions/runs/34878891295"
+    "deploymentRun": "34879684887",
+    "deploymentUrl": "https://github.com/Ding-Ding-Projects/chore-calm/actions/runs/34879684887"
   },
   "targetProof": {
     "preflightSha256": "D74888E4172C334FBF5EF91C8F96844C2459A7482C9B114EF534B409F219FC06",
-    "interactionSha256": "45FF09886D89A645C7A09BB3BC976D4ABBE83BC8797B19E95F17EA0F8A062F3B",
+    "interactionSha256": "123A4630976CA60B533EE24966903623B5391E497086083CC9A763DC10153E57",
     "captureSha256": "2ACD260E7BBF029CB1B96B6D892015938A257622AA97A1FC69CD1431B7617434",
     "mobileCaptureSha256": "E8DEE56BAC70FBF59F6CA7A790DA8F923C5336143C49295551846005F6BB2C77",
-    "finalSha256": "3D162AFD7654E66481EAE97C4F84F9E5B5D4A7ECE87F4543425D91E9DD992406"
+    "finalSha256": "68FCF338464980599A0266DAAED3A4CC997EA86E3FB63C1F376AE3B66BBE9F03"
   },
   "tuples": [
     {
@@ -26,7 +26,7 @@
       "touchEmulated": false,
       "state": "hero with Break it down story step and version provenance",
       "capture": "desktop-1440x1000.png",
-      "sha256": "ED638A58ECAC37D901DAD8D659888F4B84CF7404766C9424DBFE1FFD47C7C94A"
+      "sha256": "A7ECDE03815294FB5D1093A1EF19DD2C7820E22454CAB1E89A0C7E088115EC09"
     },
     {
       "id": "desktop-settings",
@@ -37,7 +37,7 @@
       "touchEmulated": false,
       "state": "settings dialog with language, tone, theme, narration, and local JSON controls",
       "capture": "settings-1440x1000.png",
-      "sha256": "5EEAA971CAEF6359AAB502C48B3AE59596CFF9FA6A8EDEE1F612E03C1007F64D"
+      "sha256": "922918E0151C7A8E31E23F8E227199B7AD312DAB3D0F862A6073E4E5C7855E5F"
     },
     {
       "id": "mobile-hero",
@@ -49,7 +49,7 @@
       "evidenceKind": "emulated-mobile",
       "state": "initial hero and version provenance",
       "capture": "mobile-390x844.png",
-      "sha256": "7DA0D45A2EC372A5A3E8BA8BA25F761C638ADDDFD2C47366F507AE63B235A10A"
+      "sha256": "08537884F2FE9C5611A9FF8B693FB7BAD2E78815C1BC508480A6DD68A27F504F"
     }
   ],
   "checks": {
