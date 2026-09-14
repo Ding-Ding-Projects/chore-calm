@@ -21,6 +21,7 @@ copy "%ROOT%index.html" "%ROOT%build\site\index.html" /Y >nul
 copy "%ROOT%styles.css" "%ROOT%build\site\styles.css" /Y >nul
 copy "%ROOT%script.js" "%ROOT%build\site\script.js" /Y >nul
 copy "%ROOT%content.js" "%ROOT%build\site\content.js" /Y >nul
+copy "%ROOT%favicon.svg" "%ROOT%build\site\favicon.svg" /Y >nul
 xcopy "%ROOT%assets\*" "%ROOT%build\site\assets\" /E /I /Y /Q >nul
 if errorlevel 1 exit /b 1
 copy "%ROOT%social-preview.png" "%ROOT%build\site\social-preview.png" /Y >nul

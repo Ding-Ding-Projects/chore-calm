@@ -25,7 +25,7 @@ $required = @(
     'docs/coverage/universal-feature-coverage.md', 'scripts/count-lines.ps1',
     'scripts/validate-repository.ps1', 'scripts/write-build-provenance.ps1',
     '.github/workflows/pages.yml', '.github/workflows/dependency-inventory.md',
-    'index.html', 'styles.css', 'script.js', 'content.js', 'build-provenance.js',
+    'index.html', 'styles.css', 'script.js', 'content.js', 'build-provenance.js', 'favicon.svg',
     'assets/chore-calm-mascot-hero.png', 'assets/chore-calm-first-step.png',
     'assets/chore-calm-reset-pose.png', 'social-preview.png',
     'scripts/generate-social-preview.ps1'

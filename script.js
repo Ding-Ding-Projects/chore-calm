@@ -72,6 +72,8 @@
   function renderMetadata() {
     $("version-value").textContent = content.metadata.version;
     $("updated-value").textContent = content.metadata.updatedAt;
+    const timezoneMatch = String(content.metadata.updatedAt).match(/([+-]\d{2}:\d{2})$/);
+    $("updated-timezone").textContent = timezoneMatch ? `Timezone: UTC${timezoneMatch[1]}` : "Timezone unavailable";
     document.documentElement.dataset.theme = settings.theme === "system" ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : settings.theme;
     document.documentElement.lang = settings.language === "zh" ? "zh-Hant" : "en";
     document.body.classList.toggle("lang-zh", settings.language === "zh");

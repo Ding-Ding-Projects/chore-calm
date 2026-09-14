@@ -39,6 +39,7 @@
     "script.js",
     "content.js",
     "build-provenance.js",
+    "favicon.svg",
     "social-preview.png",
     "scripts/generate-social-preview.ps1"
   ],
