@@ -112,6 +112,7 @@ md-card { display: block; }
 .marketing-hero .hero-lede { max-width: 680px; }
 .marketing-hero-art { position: relative; min-height: 450px; display: grid; place-items: center; padding: 24px; border-radius: var(--radius-xl); background: linear-gradient(135deg, var(--primary-soft), var(--surface-container)); overflow: hidden; box-shadow: var(--shadow); }
 .marketing-hero-art::before, .marketing-hero-art::after { content: ""; position: absolute; border-radius: 50%; filter: blur(2px); opacity: .55; }
+.marketing-hero-art::before, .marketing-hero-art::after, .graphic-stage::before, .graphic-stage::after { display: none; }
 .marketing-hero-art::before { width: 210px; height: 210px; top: -70px; right: -45px; background: var(--tertiary-soft); }
 .marketing-hero-art::after { width: 140px; height: 140px; bottom: -50px; left: -25px; background: var(--primary); opacity: .18; }
 .marketing-hero-art img { position: relative; z-index: 2; width: min(100%, 390px); max-height: 430px; object-fit: contain; filter: drop-shadow(0 18px 18px rgba(31, 31, 45, .18)); animation: robot-float 3.8s ease-in-out infinite; }
