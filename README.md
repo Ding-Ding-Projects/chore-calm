@@ -37,7 +37,7 @@ to this static documentation concept. See `build-installer.bat` for the honest n
 
 Published URL, verified from the live response: [Chore Calm landing page](https://ding-ding-projects.github.io/chore-calm/).
 
-The live response returned HTTP 200 from `main` after Pages deployment run `34885856594`.
+The live response returned HTTP 200 from `main` after Pages deployment run `34888216195`.
 
 ## Marketing pages
 
@@ -47,7 +47,7 @@ The live response returned HTTP 200 from `main` after Pages deployment run `3488
   memory, sequencing, sensory load, and recovery.
 - [The calm promise](calm-promise.html): no yelling, no annoyance ledger, no mess quota, patient
   reteaching, and the honest boundary around other people's reactions.
-- [Meet the chore companion](about-robot.html): the robot concept, local graphics, and product limits.
+- [Meet the chore companion](about-robot.html): the companion concept, local graphics, and product limits.
 - [Crawler directives](docs/features/crawler-directives.md): the public `robots.txt` policy and build contract.
 
 ## Documentation
@@ -61,10 +61,11 @@ The live response returned HTTP 200 from `main` after Pages deployment run `3488
 
 ## Built page evidence
 
-The Oak Kay includes inspected evidence from the isolated cheap Lowlevel headless route, bound to
-live revision `32b55add5008266d455b908bda3c7c547283075b`. The captures show the real deployed page,
+This repository includes inspected evidence from the isolated Lowlevel headless route, bound to
+live revision `c43ae9a32f48cfec7c40fcccd3d5bdc9f1b8c524`. The captures show the real deployed page,
 not a mock or design preview. The same revision carries the public `robots.txt` policy, page-level
-search suppression metadata, and registered local Material Design 3 navigation and CTA primitives.
+search suppression metadata, and registered local Material Design 3 navigation, CTA, and form
+primitives.
 
 <details>
 <summary>Open representative live captures</summary>

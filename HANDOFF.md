@@ -5,7 +5,8 @@
 The `main` candidate integrates the public-safe documentation lane and the page implementation
 lane. The page is a dependency-free static concept surface with local mascot art, a product-
 specific social preview, build provenance, four marketing routes, page-level search suppression,
-registered local Material Design 3 navigation and CTA primitives, and a strict Pages workflow.
+registered local Material Design 3 navigation, CTA, and form primitives, and a strict Pages
+workflow.
 
 Changed paths:
 
@@ -36,17 +37,17 @@ marketing route files, `md3-components.js`, `marketing-page.js`, the `assets/` m
 
 The local validation script checks the required repository contract, page entry point, metadata,
 local image inventory, documentation links, public wording boundaries, social preview dimensions,
-search suppression metadata, registered marketing primitives, and build provenance. `cmd /c
+search suppression metadata, registered marketing and form primitives, and build provenance. `cmd /c
 .\\build.bat` and strict validation pass locally at the integrated candidate. Pages run
-`34885856594` completed with green build and deploy jobs for commit
-`32b55add5008266d455b908bda3c7c547283075b`.
+`34888216195` completed with green build and deploy jobs for commit
+`c43ae9a32f48cfec7c40fcccd3d5bdc9f1b8c524`.
 
 The published URL is `https://ding-ding-projects.github.io/chore-calm/`. The live response returned
 HTTP 200, served the expected title, version surface, Open Graph metadata, mascot path, search
 suppression metadata, and commit-bound provenance. The root social preview returned HTTP 200 with
 265801 bytes. The desktop, settings, emulated-mobile, and four marketing captures are committed
 under `evidence/headless/20260914/` and are bound to live revision
-`32b55add5008266d455b908bda3c7c547283075b`. The complete capture matrix, physical-touch review,
+`c43ae9a32f48cfec7c40fcccd3d5bdc9f1b8c524`. The complete capture matrix, physical-touch review,
 and a release remain open. The earlier red run is retained as the historical default-ref failure
 on `chore-calm-docs`.
 

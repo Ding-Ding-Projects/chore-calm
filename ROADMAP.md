@@ -13,6 +13,7 @@
 
 - [x] Expand the concept into four linked marketing routes with local graphics and provenance cards.
 - [x] Use registered local Material Design 3 primitives for marketing navigation and calls to action.
+- [x] Move home settings controls into registered local components with accessible shadow internals.
 - [ ] Verify the real static landing page entry point from the built output with a genuine capture.
 - [ ] Verify the accessible responsive animations for notice, task breakdown, coaching, recovery,
   and calm completion from the built output.
@@ -20,7 +21,7 @@
 
 ## Publication evidence
 
-- [ ] Capture the complete genuine built-page HuiShot matrix and record every commit, output hash, viewport,
+- [ ] Capture the complete genuine built-page screenshot matrix and record every commit, output hash, viewport,
   scale, theme, and privacy result.
 - [x] Add the first verified desktop, settings, and emulated-mobile captures with commit-bound
   runtime audit evidence.

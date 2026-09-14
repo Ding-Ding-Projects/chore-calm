@@ -88,7 +88,7 @@ foreach ($component in @('md-select', 'md-slider', 'md-switch', 'md-file-picker'
 Assert-Text 'how-it-works.html' 'How Chore Calm works' 'the how-it-works marketing page'
 Assert-Text 'adhd-and-chores.html' 'ADHD and chores' 'the ADHD marketing page'
 Assert-Text 'calm-promise.html' 'The calm promise' 'the promise marketing page'
-Assert-Text 'about-robot.html' 'Meet the chore companion' 'the robot marketing page'
+Assert-Text 'about-robot.html' 'Meet the chore companion' 'the companion marketing page'
 
 $publicFiles = Get-ChildItem -LiteralPath $Root -File -Recurse | Where-Object {
     $_.FullName -notlike "*$([IO.Path]::DirectorySeparatorChar)build$([IO.Path]::DirectorySeparatorChar)*" -and
