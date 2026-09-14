@@ -1,16 +1,17 @@
 # Built page evidence, 2026-09-14
 
 These captures were taken from the deployed Chore Calm page through the isolated cheap
-Lowlevel headless route. They are tied to deployment run `34885856594` and live provenance
-commit `32b55add5008266d455b908bda3c7c547283075b`.
+Lowlevel headless route. They are tied to deployment run `34889665289` and live provenance
+commit `60c3606363d37e099362a1111fc5894422943899`.
 
 The desktop and settings captures are whole-window PNGs from the hidden Edge window. The portrait
 capture is page-only CDP evidence with touch emulation, so it is labelled as emulated mobile
 evidence rather than physical-device proof.
 
 The four marketing routes also have whole-window captures from the same isolated desktop. Their
-navigation and calls to action use registered local Lang gui primitives, and the narrow route
-strip has a visible horizontal scrollbar cue.
+navigation and calls to action use registered local Material Design 3 primitives, and the narrow
+route strip has a visible horizontal scrollbar cue. The home settings surface also uses registered
+select, slider, switch, file-picker, and search primitives with accessible shadow internals.
 
 | State | Tuple | Capture |
 | --- | --- | --- |
@@ -20,7 +21,7 @@ strip has a visible horizontal scrollbar cue.
 | How it works marketing page | 929 x 1004, scale 1, English, light | [marketing-how-it-works.png](marketing-how-it-works.png) |
 | ADHD and chores marketing page | 929 x 1004, scale 1, English, light | [marketing-adhd-and-chores.png](marketing-adhd-and-chores.png) |
 | Calm promise marketing page | 929 x 1004, scale 1, English, light | [marketing-calm-promise.png](marketing-calm-promise.png) |
-| Meet the robot marketing page | 929 x 1004, scale 1, English, light | [marketing-about-robot.png](marketing-about-robot.png) |
+| Meet the companion marketing page | 929 x 1004, scale 1, English, light | [marketing-about-robot.png](marketing-about-robot.png) |
 
 ## Runtime result
 
@@ -40,4 +41,4 @@ strip has a visible horizontal scrollbar cue.
 
 The complete machine-readable summary is [runtime-audit.json](runtime-audit.json). Raw target receipts
 and diagnostics remain in the task-owned private run directory and are not copied into this public
-Oak Kay because they contain local process and path details.
+repository because they contain local process and path details.

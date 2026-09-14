@@ -39,15 +39,15 @@ The local validation script checks the required repository contract, page entry 
 local image inventory, documentation links, public wording boundaries, social preview dimensions,
 search suppression metadata, registered marketing and form primitives, and build provenance. `cmd /c
 .\\build.bat` and strict validation pass locally at the integrated candidate. Pages run
-`34888216195` completed with green build and deploy jobs for commit
-`c43ae9a32f48cfec7c40fcccd3d5bdc9f1b8c524`.
+`34889665289` completed with green build and deploy jobs for commit
+`60c3606363d37e099362a1111fc5894422943899`.
 
 The published URL is `https://ding-ding-projects.github.io/chore-calm/`. The live response returned
 HTTP 200, served the expected title, version surface, Open Graph metadata, mascot path, search
 suppression metadata, and commit-bound provenance. The root social preview returned HTTP 200 with
 265801 bytes. The desktop, settings, emulated-mobile, and four marketing captures are committed
 under `evidence/headless/20260914/` and are bound to live revision
-`c43ae9a32f48cfec7c40fcccd3d5bdc9f1b8c524`. The complete capture matrix, physical-touch review,
+`60c3606363d37e099362a1111fc5894422943899`. The complete capture matrix, physical-touch review,
 and a release remain open. The earlier red run is retained as the historical default-ref failure
 on `chore-calm-docs`.
 

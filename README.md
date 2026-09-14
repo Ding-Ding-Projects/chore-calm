@@ -37,7 +37,7 @@ to this static documentation concept. See `build-installer.bat` for the honest n
 
 Published URL, verified from the live response: [Chore Calm landing page](https://ding-ding-projects.github.io/chore-calm/).
 
-The live response returned HTTP 200 from `main` after Pages deployment run `34888216195`.
+The live response returned HTTP 200 from `main` after Pages deployment run `34889665289`.
 
 ## Marketing pages
 
@@ -62,7 +62,7 @@ The live response returned HTTP 200 from `main` after Pages deployment run `3488
 ## Built page evidence
 
 This repository includes inspected evidence from the isolated Lowlevel headless route, bound to
-live revision `c43ae9a32f48cfec7c40fcccd3d5bdc9f1b8c524`. The captures show the real deployed page,
+live revision `60c3606363d37e099362a1111fc5894422943899`. The captures show the real deployed page,
 not a mock or design preview. The same revision carries the public `robots.txt` policy, page-level
 search suppression metadata, and registered local Material Design 3 navigation, CTA, and form
 primitives.
