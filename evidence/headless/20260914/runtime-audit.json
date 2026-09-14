@@ -4,17 +4,17 @@
   "expectedUrl": "https://ding-ding-projects.github.io/chore-calm/",
   "source": {
     "kind": "live",
-    "revision": "36b1c41ff685faa492a294512c546500bd5612b9",
+    "revision": "d15f749ddbf21c302b27389cc4f545fd81fde4fd",
     "revisionVerified": true,
-    "deploymentRun": "34877909162",
-    "deploymentUrl": "https://github.com/Ding-Ding-Projects/chore-calm/actions/runs/34877909162"
+    "deploymentRun": "34878891295",
+    "deploymentUrl": "https://github.com/Ding-Ding-Projects/chore-calm/actions/runs/34878891295"
   },
   "targetProof": {
     "preflightSha256": "D74888E4172C334FBF5EF91C8F96844C2459A7482C9B114EF534B409F219FC06",
-    "interactionSha256": "3B89FDD7BD772B409E48FAE06D004B4319ADACA1EB0F91EA91949C040606349D",
-    "captureSha256": "8792E21E9F49D7723CDE60E10422E7EA59BEA0DCBF736FAB5507B7E7070A3A06",
-    "mobileCaptureSha256": "FCE864A2766738027D4807550B343D9031B439AC23F8AC16B715D888E7E14D4B",
-    "finalSha256": "5EB8F4576D1BC9EF1C3028855C2749A4F32C5BAEE7B246335EE707DB8BB9B4CF"
+    "interactionSha256": "45FF09886D89A645C7A09BB3BC976D4ABBE83BC8797B19E95F17EA0F8A062F3B",
+    "captureSha256": "2ACD260E7BBF029CB1B96B6D892015938A257622AA97A1FC69CD1431B7617434",
+    "mobileCaptureSha256": "E8DEE56BAC70FBF59F6CA7A790DA8F923C5336143C49295551846005F6BB2C77",
+    "finalSha256": "3D162AFD7654E66481EAE97C4F84F9E5B5D4A7ECE87F4543425D91E9DD992406"
   },
   "tuples": [
     {
@@ -24,9 +24,9 @@
       "scale": 1,
       "mobile": false,
       "touchEmulated": false,
-      "state": "initial hero and version provenance",
+      "state": "hero with Break it down story step and version provenance",
       "capture": "desktop-1440x1000.png",
-      "sha256": "9680DE7551D94895733197395DF51E8B9DE08C61A5F615D81FBDF817949908D9"
+      "sha256": "ED638A58ECAC37D901DAD8D659888F4B84CF7404766C9424DBFE1FFD47C7C94A"
     },
     {
       "id": "desktop-settings",
@@ -37,7 +37,7 @@
       "touchEmulated": false,
       "state": "settings dialog with language, tone, theme, narration, and local JSON controls",
       "capture": "settings-1440x1000.png",
-      "sha256": "36AA77034A2A3B1F928C4857C83CEB347CC298D5E23D0BEC1328D4B4FA7D74E3"
+      "sha256": "5EEAA971CAEF6359AAB502C48B3AE59596CFF9FA6A8EDEE1F612E03C1007F64D"
     },
     {
       "id": "mobile-hero",
@@ -49,7 +49,7 @@
       "evidenceKind": "emulated-mobile",
       "state": "initial hero and version provenance",
       "capture": "mobile-390x844.png",
-      "sha256": "F1DEE1F5F57E2EED5F81F68269FCFFE36E5785CBF56530B19D6040179EF5551A"
+      "sha256": "7DA0D45A2EC372A5A3E8BA8BA25F761C638ADDDFD2C47366F507AE63B235A10A"
     }
   ],
   "checks": {

@@ -33,16 +33,17 @@ mascot files, `design/README.md`, `social-preview.png`, and the provenance helpe
 The local validation script checks the required repository contract, page entry point, metadata,
 local image inventory, documentation links, public wording boundaries, social preview dimensions,
 and build provenance. `cmd /c .\\build.bat` and strict validation pass locally at the integrated
-candidate. Pages run `34875987736` completed with green build and deploy jobs for commit
-`3944931bfcc2123ae7a63e0f43ef43f2344caec2`.
+candidate. Pages run `34878891295` completed with green build and deploy jobs for commit
+`d15f749ddbf21c302b27389cc4f545fd81fde4fd`.
 
 The published URL is `https://ding-ding-projects.github.io/chore-calm/`. The live response returned
 HTTP 200, served the expected title, version surface, Open Graph metadata, mascot path, and
 commit-bound provenance. The root social preview returned HTTP 200 with 265801 bytes. The first
 verified desktop, settings, and emulated-mobile captures are committed under
-`evidence/headless/20260914/`. The complete capture matrix, physical-touch review, and a release
-remain open. The earlier red run is retained as the historical default-ref failure on
-`chore-calm-docs`.
+`evidence/headless/20260914/` and are bound to live revision
+`d15f749ddbf21c302b27389cc4f545fd81fde4fd`. The complete capture matrix, physical-touch review,
+and a release remain open. The earlier red run is retained as the historical default-ref failure
+on `chore-calm-docs`.
 
 ## Public tracking
 

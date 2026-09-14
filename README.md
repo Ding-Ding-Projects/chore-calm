@@ -48,8 +48,9 @@ The live response returned HTTP 200 from `main` after Pages deployment run `3487
 
 ## Built page evidence
 
-The current published page has inspected evidence from the isolated cheap Lowlevel headless route.
-The captures show the real deployed page, not a mock or design preview.
+The Oak Kay includes inspected evidence from the isolated cheap Lowlevel headless route, bound to
+live revision `d15f749ddbf21c302b27389cc4f545fd81fde4fd`. The captures show the real deployed page,
+not a mock or design preview.
 
 <details>
 <summary>Open representative live captures</summary>
